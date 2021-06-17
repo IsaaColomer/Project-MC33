@@ -82,3 +82,36 @@ Received Import Request.
 Start importing Assets/Simple 2D Platformer BE2/Readme.asset using Guid(53e51aee442d4ef479557f25a7bd3230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8315ad04d6e44215bc078a8299297ec9') in 0.010571 seconds
   Import took 0.012691 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 210.424064 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(b214880e119883343a3d7b0f89964b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(b214880e119883343a3d7b0f89964b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1add2e1d76070193728593379d6470') in 0.005577 seconds
+  Import took 0.007847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011578 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(b214880e119883343a3d7b0f89964b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(b214880e119883343a3d7b0f89964b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1add2e1d76070193728593379d6470') in 0.001900 seconds
+  Import took 0.004148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.712042 seconds.
+  path: Assets/Scenes/a.unity
+  artifactKey: Guid(e8ac5b035d68f3b4ba67a695a0377432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/a.unity using Guid(e8ac5b035d68f3b4ba67a695a0377432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83b364205fb16fd0c8236dc44bec834') in 0.006444 seconds
+  Import took 0.008535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 304.981606 seconds.
+  path: Assets/Scenes/a.unity
+  artifactKey: Guid(e8ac5b035d68f3b4ba67a695a0377432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/a.unity using Guid(e8ac5b035d68f3b4ba67a695a0377432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f2ba32f4ee1cb039e682e60f505b19') in 0.002110 seconds
+  Import took 0.004674 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
