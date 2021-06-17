@@ -756,12 +756,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1798364602}
+  isGrounded: 0
+  doubleJump: 0
   GroundMask:
     serializedVersion: 2
     m_Bits: 64
   rb: {fileID: 1798364603}
   runSpeed: 50
-  jumpVel: 25
+  jumpVel: 50
   boxCol: {fileID: 1798364606}
 --- !u!232 &1798364609
 DistanceJoint2D:

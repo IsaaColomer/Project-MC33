@@ -28,10 +28,10 @@ public class MovementFirst : MonoBehaviour
             doubleJump = true;
             rb.velocity = (Vector2.up) * jumpVel;
         }
-        if(doubleJump == true)
+        if(doubleJump == true && Input.GetKeyDown("z"))
         {
-            rb.velocity = (Vector2.up) * (jumpVel);
-            doubleJump = false;
+             rb.velocity = (Vector2.up/2) * (jumpVel);
+             doubleJump = false;
         }
     }
    
@@ -41,6 +41,7 @@ public class MovementFirst : MonoBehaviour
         if(rayCasthit2D.collider != null)
         {
             isGrounded = true;
+            doubleJump = false;
         }
         else
         {
