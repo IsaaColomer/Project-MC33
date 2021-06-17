@@ -5,30 +5,51 @@ using UnityEngine;
 public class MovementFirst : MonoBehaviour
 {
     public CharacterController2D controller;
+    public bool isGrounded = false;
+    public bool doubleJump;
+    [SerializeField] private LayerMask GroundMask;
+    public Rigidbody2D rb;
     public float runSpeed = 40f;
+    public float jumpVel = 10f;
+    public BoxCollider2D boxCol;
     float horizontalMove = 0f;
-    bool jump = false;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        //Debug.Log(Input.GetAxisRaw("Horizontal"));
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        if(Input.GetButtonDown("Jump"))
+                
+        horizontalMove = Input.GetAxisRaw("Horizontal")*runSpeed;
+        if(IsGrounded() && Input.GetKeyDown("z"))
         {
-            jump = true;
+            doubleJump = true;
+            rb.velocity = (Vector2.up) * jumpVel;
         }
-        FixeUpdate();
+        if(doubleJump == true)
+        {
+            rb.velocity = (Vector2.up) * (jumpVel);
+            doubleJump = false;
+        }
     }
-
-    void FixeUpdate()
+   
+    private bool IsGrounded()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime,false,jump);
-        jump = false;
+       RaycastHit2D rayCasthit2D = Physics2D.BoxCast(boxCol.bounds.center, boxCol.bounds.size, 0f, Vector2.down, 1f, GroundMask);
+        if(rayCasthit2D.collider != null)
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+       return rayCasthit2D.collider != null;
+    }
+    void FixedUpdate()
+    {
+        controller.Move(horizontalMove*Time.fixedDeltaTime,false,false);
     }
 }

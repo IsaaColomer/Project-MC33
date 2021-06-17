@@ -590,7 +590,6 @@ GameObject:
   - component: {fileID: 1798364602}
   - component: {fileID: 1798364603}
   - component: {fileID: 1798364606}
-  - component: {fileID: 1798364607}
   - component: {fileID: 1798364608}
   - component: {fileID: 1798364610}
   - component: {fileID: 1798364609}
@@ -613,9 +612,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea315a10022d1144934293c0a460502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 800
-  m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
+  m_JumpForce: 1000
+  m_CrouchSpeed: 0
+  m_MovementSmoothing: 0
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
@@ -644,7 +643,7 @@ Rigidbody2D:
   m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 9.8
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -731,7 +730,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.032035112, y: 0.16514814}
+  m_Offset: {x: -0.032035112, y: 0.0014588237}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -742,24 +741,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.67110395, y: 0.53301954}
+  m_Size: {x: 0.67110395, y: 0.8603982}
   m_EdgeRadius: 0
---- !u!58 &1798364607
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798364601}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.04, y: -0.18}
-  serializedVersion: 2
-  m_Radius: 0.32417598
 --- !u!114 &1798364608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,7 +756,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1798364602}
-  runSpeed: 40
+  GroundMask:
+    serializedVersion: 2
+    m_Bits: 64
+  rb: {fileID: 1798364603}
+  runSpeed: 50
+  jumpVel: 25
+  boxCol: {fileID: 1798364606}
 --- !u!232 &1798364609
 DistanceJoint2D:
   m_ObjectHideFlags: 0

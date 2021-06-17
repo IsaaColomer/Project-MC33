@@ -47,7 +47,7 @@ public class GrapDetection : MonoBehaviour
     {
         if(col.gameObject.layer == LayerMask.NameToLayer("Grap"))
         {
-            Debug.Log("Grap!");
+            //Debug.Log("Grap!");
             grapPosO = col.transform.position;
             grapOn = true;
         }
