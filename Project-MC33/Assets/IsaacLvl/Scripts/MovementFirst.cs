@@ -21,18 +21,28 @@ public class MovementFirst : MonoBehaviour
 
     private void Update()
     {
-                
-        horizontalMove = Input.GetAxisRaw("Horizontal")*runSpeed;
-        if(IsGrounded() && Input.GetKeyDown("z"))
+        if(IsGrounded())
         {
             doubleJump = true;
-            rb.velocity = (Vector2.up) * jumpVel;
         }
-        if(doubleJump == true && Input.GetKeyDown("z"))
+                
+        horizontalMove = Input.GetAxisRaw("Horizontal")*runSpeed;
+
+        if(Input.GetKeyDown(KeyCode.Z))
         {
-             rb.velocity = (Vector2.up/2) * (jumpVel);
-             doubleJump = false;
+            if(IsGrounded())
+            {
+                rb.velocity = (Vector2.up) * jumpVel;
+            } else
+            {
+                if(doubleJump)
+                {
+                    rb.velocity = (Vector2.up) * (jumpVel);
+                    doubleJump = false;
+                }
+            }
         }
+        
     }
    
     private bool IsGrounded()
@@ -41,7 +51,7 @@ public class MovementFirst : MonoBehaviour
         if(rayCasthit2D.collider != null)
         {
             isGrounded = true;
-            doubleJump = false;
+            doubleJump = true;
         }
         else
         {
