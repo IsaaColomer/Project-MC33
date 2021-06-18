@@ -42,5 +42,10 @@ public class FallRestart : MonoBehaviour
                 mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
                 startPos = rb.transform.position;      
             }
+            if(other.gameObject.name == "ChageLevel03")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                startPos = rb.transform.position;      
+            }
     }
 }
