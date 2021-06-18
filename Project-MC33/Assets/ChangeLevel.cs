@@ -6,26 +6,18 @@ using UnityEngine;
 public class ChangeLevel : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public BoxCollider2D col;
+    public BoxCollider2D col01;
     public Camera mainCamera;
-    void Update()
-    {
-
-    }
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
-            if(other.gameObject.name == "ChangeLevel01")
+            if(other.gameObject.name == "ChageLevel01")
             {
-                Debug.Log("coño");
-                mainCamera.transform.position = new Vector3(0f,0f,-9.8f);
-           
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);           
             }
-            if(other.gameObject.name == "ChangeLevel02")
+            if(other.gameObject.name == "ChageLevel02")
             {
-                Debug.Log("pito");
-                mainCamera.transform.position = new Vector3(53f,0f,-9.8f);
-           
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);           
             }
     }
 }
