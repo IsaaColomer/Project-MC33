@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Spikes
+  - Fall
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - Ground
   - Player
   - Grap
-  - 
-  - 
+  - Spikes
+  - Fall
   - 
   - 
   - 
