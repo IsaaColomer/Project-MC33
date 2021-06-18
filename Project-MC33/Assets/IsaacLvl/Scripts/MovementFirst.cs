@@ -11,7 +11,7 @@ public class MovementFirst : MonoBehaviour
     public Rigidbody2D rb;
     public float runSpeed = 40f;
     public float jumpVel = 10f;
-    public BoxCollider2D boxCol;
+    public CapsuleCollider2D capsCol;
     float horizontalMove = 0f;
     // Start is called before the first frame update
     private void Awake()
@@ -47,7 +47,7 @@ public class MovementFirst : MonoBehaviour
    
     private bool IsGrounded()
     {
-       RaycastHit2D rayCasthit2D = Physics2D.BoxCast(boxCol.bounds.center, boxCol.bounds.size, 0f, Vector2.down, 1f, GroundMask);
+       RaycastHit2D rayCasthit2D = Physics2D.BoxCast(capsCol.bounds.center, capsCol.bounds.size, 0f, Vector2.down, 1f, GroundMask);
         if(rayCasthit2D.collider != null)
         {
             isGrounded = true;
