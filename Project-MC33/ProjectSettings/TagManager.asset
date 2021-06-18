@@ -8,6 +8,7 @@ TagManager:
   - Spikes
   - Fall
   - Flag
+  - ChangeLvl
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - Spikes
   - Fall
   - Flag
-  - 
-  - 
+  - ChangeLvl
+  - ChangeLvl2
   - 
   - 
   - 
