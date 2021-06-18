@@ -29,4 +29,18 @@ public class FallRestart : MonoBehaviour
         rb.transform.position = startPos;
     }
     }
+     public Camera mainCamera;
+    // Start is called before the first frame update
+    void OnTriggerEnter2D(Collider2D other)
+    {
+            if(other.gameObject.name == "ChageLevel01")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);           
+            }
+            if(other.gameObject.name == "ChageLevel02")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                startPos = rb.transform.position;      
+            }
+    }
 }
