@@ -26,13 +26,11 @@ public class FallRestart : MonoBehaviour
     {
         rb.transform.position = startPos;
         death++;
-        Debug.Log(death);
     }
     if(col.gameObject.layer == LayerMask.NameToLayer("Fall"))
     {
         rb.transform.position = startPos;
         death++;
-         Debug.Log(death);
     }
     }
      public Camera mainCamera;
