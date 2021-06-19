@@ -51,5 +51,48 @@ public class FallRestart : MonoBehaviour
                 mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
                 startPos = rb.transform.position;      
             }
+             if(other.gameObject.name == "ChageLevel04")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel05")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel06")
+            {
+                
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
+                startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel07")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel08")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel09")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel10")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel11")
+            {
+                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                startPos = rb.transform.position;      
+            }
+           
+
     }
 }
