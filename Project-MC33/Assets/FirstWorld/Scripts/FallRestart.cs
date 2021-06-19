@@ -6,9 +6,11 @@ public class FallRestart : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Vector3 startPos;
+    public int death;
     // Start is called before the first frame update
     void Start()
     {
+        death = 0;
         startPos = rb.transform.position;
     }
 
@@ -23,10 +25,14 @@ public class FallRestart : MonoBehaviour
     if(col.gameObject.layer == LayerMask.NameToLayer("Spikes"))
     {
         rb.transform.position = startPos;
+        death++;
+        Debug.Log(death);
     }
     if(col.gameObject.layer == LayerMask.NameToLayer("Fall"))
     {
         rb.transform.position = startPos;
+        death++;
+         Debug.Log(death);
     }
     }
      public Camera mainCamera;
