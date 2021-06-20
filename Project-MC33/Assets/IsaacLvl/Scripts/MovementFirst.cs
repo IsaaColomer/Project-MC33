@@ -13,6 +13,9 @@ public class MovementFirst : MonoBehaviour
     public float jumpVel = 10f;
     public CapsuleCollider2D capsCol;
     float horizontalMove = 0f;
+    public Collider2D attachCol;
+    public bool attached = false;
+    public BoxCollider2D Swing;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -42,6 +45,14 @@ public class MovementFirst : MonoBehaviour
                 }
             }
         }
+        if(attached)
+        {
+            capsCol.transform.position = Swing.transform.position;
+        }
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            attached = false;
+        }
         
     }
    
@@ -69,6 +80,14 @@ public class MovementFirst : MonoBehaviour
         if(coll.gameObject.layer == LayerMask.NameToLayer("resetJump"))
         {
             doubleJump = true;
+        }
+        if(coll.gameObject.layer == LayerMask.NameToLayer("Swing") && attachCol is CapsuleCollider2D)
+        {
+            attached = true;
+        }
+        else
+        {
+            attached = false;
         }
     }
 }
