@@ -7,6 +7,13 @@ public class FallRestart : MonoBehaviour
     public Rigidbody2D rb;
     public Vector3 startPos;
     public int death;
+    public GameObject rj1;
+    public GameObject rj2;
+    public GameObject rj3;
+    public GameObject rj4;
+    public GameObject rj5;
+    public GameObject rj6;
+    public GameObject rj7;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +32,25 @@ public class FallRestart : MonoBehaviour
     if(col.gameObject.layer == LayerMask.NameToLayer("Spikes"))
     {
         rb.transform.position = startPos;
+        rj1.SetActive(true);
+        rj2.SetActive(true);
+        rj3.SetActive(true);
+        rj4.SetActive(true);
+        rj5.SetActive(true);
+        rj6.SetActive(true);
+        rj7.SetActive(true);
         death++;
     }
     if(col.gameObject.layer == LayerMask.NameToLayer("Fall"))
     {
         rb.transform.position = startPos;
+        rj1.SetActive(true);
+        rj2.SetActive(true);
+        rj3.SetActive(true);
+        rj4.SetActive(true);
+        rj5.SetActive(true);
+        rj6.SetActive(true);
+        rj7.SetActive(true);
         death++;
     }
     }

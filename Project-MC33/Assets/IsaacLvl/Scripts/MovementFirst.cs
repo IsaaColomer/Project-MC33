@@ -66,7 +66,7 @@ public class MovementFirst : MonoBehaviour
         controller.Move(horizontalMove*Time.fixedDeltaTime,false,false);
     }
 
-    void OnTriggerStay2D(Collider2D coll)
+    void OnTriggerEnter2D(Collider2D coll)
     {
         if(coll.gameObject.layer == LayerMask.NameToLayer("resetJump"))
         {
