@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FallRestart : MonoBehaviour
 {
@@ -90,8 +91,7 @@ public class FallRestart : MonoBehaviour
             }
              if(other.gameObject.name == "ChageLevel07")
             {
-                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
-                startPos = rb.transform.position;      
+               SceneManager.LoadScene("Credits");    
             }
              if(other.gameObject.name == "ChageLevel08")
             {
