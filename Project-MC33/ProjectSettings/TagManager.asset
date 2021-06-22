@@ -9,6 +9,7 @@ TagManager:
   - Fall
   - Flag
   - ChangeLvl
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -27,8 +28,8 @@ TagManager:
   - resetJump
   - Swing
   - SwingCol
-  - 
-  - 
+  - Bullet
+  - DestroyBullet
   - 
   - 
   - 
