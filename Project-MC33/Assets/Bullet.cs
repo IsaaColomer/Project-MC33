@@ -6,20 +6,30 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
-    //public GameObject bp;
-    private GameObject bc;
 
-    // Start is called before the first frame update
-    void OnObjectSpawn()
+    Weapon count;
+    void Start()
     {
        rb.velocity = transform.right * speed;
     }
     void OnTriggerEnter2D(Collider2D col)
     {
+        GameObject count = GameObject.Find("PlayerGeneral");
+        Weapon count2 = count.GetComponent<Weapon>();
         if(col.gameObject.layer == LayerMask.NameToLayer("DestroyBullet"))
         {
-            Debug.Log("Destroy");
-            Destroy(this);
+            Destroy(gameObject);
+            count2.bulletCount--;
+        }
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        GameObject count = GameObject.Find("PlayerGeneral");
+        Weapon count2 = count.GetComponent<Weapon>();
+        if(col.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            Destroy(gameObject);
+            count2.bulletCount--;
         }
     }
 }
