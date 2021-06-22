@@ -18,16 +18,19 @@ public class Bullet : MonoBehaviour
         Weapon count2 = count.GetComponent<Weapon>();
         if(col.gameObject.layer == LayerMask.NameToLayer("DestroyBullet"))
         {
+            Debug.Log("Wall bullet destroyer Detected!");
             Destroy(gameObject);
             count2.bulletCount--;
         }
-    }
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        GameObject count = GameObject.Find("PlayerGeneral");
-        Weapon count2 = count.GetComponent<Weapon>();
         if(col.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
+            Debug.Log("Ground Detected!");
+            Destroy(gameObject);
+            count2.bulletCount--;
+        }
+        if(col.gameObject.layer == LayerMask.NameToLayer("Spikes"))
+        {
+            Debug.Log("Spike Detected!");
             Destroy(gameObject);
             count2.bulletCount--;
         }
