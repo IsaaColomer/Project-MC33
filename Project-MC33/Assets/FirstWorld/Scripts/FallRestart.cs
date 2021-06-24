@@ -113,5 +113,7 @@ public class FallRestart : MonoBehaviour
                 mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
                 startPos = rb.transform.position;      
             }
+           
+
     }
 }
