@@ -15,9 +15,6 @@ public class Bullet : MonoBehaviour
         GameObject count = GameObject.Find("PlayerGeneral");
         Weapon count2 = count.GetComponent<Weapon>();
 
-        GameObject bossLife = GameObject.Find("Boss");
-        Boss1 bossLife2 = bossLife.GetComponent<Boss1>();
-
         if(col.gameObject.layer == LayerMask.NameToLayer("DestroyBullet"))
         {
             Debug.Log("Wall bullet destroyer Detected!");
@@ -36,26 +33,12 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             count2.bulletCount--;
         }
-        if(col.gameObject.layer == LayerMask.NameToLayer("Boss"))
-        {
-            if(col.GetComponent<Collider>().GetType() == typeof(CircleCollider2D))
-            {
-             Debug.Log("Boss Circle Detected!");
-            }
-            else
-            {
-            Debug.Log("Boss Detected!");
-            //Destroy(gameObject);
-            count2.bulletCount--;
-            bossLife2.life--;
-            }
-        }
-        if(col.gameObject.layer == LayerMask.NameToLayer("Player"))
-        {
-            Debug.Log("Player Detected!");
-            Destroy(gameObject);
-            count2.bulletCount--;
-        }
+        // if(col.gameObject.layer == LayerMask.NameToLayer("Player"))
+        // {
+        //     Debug.Log("Player Detected!");
+        //     Destroy(gameObject);
+        //     count2.bulletCount--;
+        // }
     }
 }
 //if (GameObject.FindGameObjectsWithTag(tag).Length < 5) {        boltObject = (GameObject)Instantiate (bolt, Canon.position, Canon.rotation);      boltObject.tag = tag;    }

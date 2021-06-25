@@ -19,11 +19,11 @@ public class GrapDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("x") && grapOn == false)
+        if (Input.GetKeyDown("c") && grapOn == false)
         {
             grapOn = false;
         }
-        if (Input.GetKeyDown("x") && grapOn == true)
+        if (Input.GetKeyDown("c") && grapOn == true)
         {
             Vector2 grapPos = grapPosO;
             _lineRenderer.SetPosition(0, grapPos);
@@ -32,7 +32,7 @@ public class GrapDetection : MonoBehaviour
             _distanceJoint.enabled = true;
             _lineRenderer.enabled = true;
         }
-        else if (Input.GetKeyUp("x"))
+        else if (Input.GetKeyUp("c"))
         {
             _distanceJoint.enabled = false;
             _lineRenderer.enabled = false;

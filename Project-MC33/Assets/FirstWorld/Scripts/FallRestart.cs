@@ -91,7 +91,9 @@ public class FallRestart : MonoBehaviour
             }
              if(other.gameObject.name == "ChageLevel07")
             {
-               SceneManager.LoadScene("Credits");    
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
+                startPos = rb.transform.position;      
+               //ceneManager.LoadScene("Credits");    
             }
              if(other.gameObject.name == "ChageLevel08")
             {
