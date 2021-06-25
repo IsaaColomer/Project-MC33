@@ -32,6 +32,10 @@ public class FallRestart : MonoBehaviour
     {
     if(col.gameObject.layer == LayerMask.NameToLayer("Spikes"))
     {
+        GameObject grap = GameObject.Find("PlayerGeneral");
+        GrapDetection grap2 = grap.GetComponent<GrapDetection>();
+
+        grap2._distanceJoint.enabled = false;
         rb.transform.position = startPos;
         rj1.SetActive(true);
         rj2.SetActive(true);
@@ -44,6 +48,11 @@ public class FallRestart : MonoBehaviour
     }
     if(col.gameObject.layer == LayerMask.NameToLayer("Fall"))
     {
+        GameObject grap = GameObject.Find("PlayerGeneral");
+        GrapDetection grap2 = grap.GetComponent<GrapDetection>();
+
+        grap2._distanceJoint.enabled = false;
+
         rb.transform.position = startPos;
         rj1.SetActive(true);
         rj2.SetActive(true);
