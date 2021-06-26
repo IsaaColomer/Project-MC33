@@ -61,6 +61,10 @@ public class FallRestart : MonoBehaviour
         rj5.SetActive(true);
         rj6.SetActive(true);
         rj7.SetActive(true);
+
+        GameObject restart = GameObject.Find("PlayerGeneral");
+        Brakable restart2 = restart.GetComponent<Brakable>();
+        restart2.restart = true;
         death++;
     }
     }
