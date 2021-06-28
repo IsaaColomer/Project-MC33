@@ -8,13 +8,13 @@ public class FallRestart : MonoBehaviour
     public Rigidbody2D rb;
     public Vector3 startPos;
     public int death;
-    public GameObject rj1;
-    public GameObject rj2;
-    public GameObject rj3;
-    public GameObject rj4;
-    public GameObject rj5;
-    public GameObject rj6;
-    public GameObject rj7;
+    // public GameObject rj1;
+    // public GameObject rj2;
+    // public GameObject rj3;
+    // public GameObject rj4;
+    // public GameObject rj5;
+    // public GameObject rj6;
+    // public GameObject rj7;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,15 +35,19 @@ public class FallRestart : MonoBehaviour
         GameObject grap = GameObject.Find("PlayerGeneral");
         GrapDetection grap2 = grap.GetComponent<GrapDetection>();
 
+                GameObject lol = GameObject.Find("PlayerGeneral");
+        GrapDetection lol2 = lol.GetComponent<GrapDetection>();
+
+        lol2.grapOn = false;
         grap2._distanceJoint.enabled = false;
         rb.transform.position = startPos;
-        rj1.SetActive(true);
-        rj2.SetActive(true);
-        rj3.SetActive(true);
-        rj4.SetActive(true);
-        rj5.SetActive(true);
-        rj6.SetActive(true);
-        rj7.SetActive(true);
+        // rj1.SetActive(true);
+        // rj2.SetActive(true);
+        // rj3.SetActive(true);
+        // rj4.SetActive(true);
+        // rj5.SetActive(true);
+        // rj6.SetActive(true);
+        // rj7.SetActive(true);
         death++;
     }
     if(col.gameObject.layer == LayerMask.NameToLayer("Fall"))
@@ -51,20 +55,22 @@ public class FallRestart : MonoBehaviour
         GameObject grap = GameObject.Find("PlayerGeneral");
         GrapDetection grap2 = grap.GetComponent<GrapDetection>();
 
+        GameObject lol = GameObject.Find("PlayerGeneral");
+        GrapDetection lol2 = lol.GetComponent<GrapDetection>();
+
+        lol2.grapOn = false;
         grap2._distanceJoint.enabled = false;
 
         rb.transform.position = startPos;
-        rj1.SetActive(true);
-        rj2.SetActive(true);
-        rj3.SetActive(true);
-        rj4.SetActive(true);
-        rj5.SetActive(true);
-        rj6.SetActive(true);
-        rj7.SetActive(true);
+        // rj1.SetActive(true);
+        // rj2.SetActive(true);
+        // rj3.SetActive(true);
+        // rj4.SetActive(true);
+        // rj5.SetActive(true);
+        // rj6.SetActive(true);
+        // rj7.SetActive(true);
 
-        GameObject restart = GameObject.Find("PlayerGeneral");
-        Brakable restart2 = restart.GetComponent<Brakable>();
-        restart2.restart = true;
+        Debug.Log("lol");
         death++;
     }
     }
