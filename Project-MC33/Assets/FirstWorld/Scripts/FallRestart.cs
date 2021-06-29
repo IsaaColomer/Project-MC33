@@ -7,6 +7,7 @@ public class FallRestart : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Vector3 startPos;
+    public Vector3 restartPos;
     public int death;
     // public GameObject rj1;
     // public GameObject rj2;
@@ -20,12 +21,17 @@ public class FallRestart : MonoBehaviour
     {
         death = 0;
         startPos = rb.transform.position;
+        restartPos = startPos;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown("r"))
+        {
+            Debug.Log("R");
+           rb.transform.position = restartPos;   
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -35,7 +41,7 @@ public class FallRestart : MonoBehaviour
         GameObject grap = GameObject.Find("PlayerGeneral");
         GrapDetection grap2 = grap.GetComponent<GrapDetection>();
 
-                GameObject lol = GameObject.Find("PlayerGeneral");
+        GameObject lol = GameObject.Find("PlayerGeneral");
         GrapDetection lol2 = lol.GetComponent<GrapDetection>();
 
         lol2.grapOn = false;
