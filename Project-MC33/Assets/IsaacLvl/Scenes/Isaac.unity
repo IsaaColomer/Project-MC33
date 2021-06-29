@@ -8806,6 +8806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2220534434300655824}
   startPos: {x: 0, y: 0, z: 0}
+  restartPos: {x: 0, y: 0, z: 0}
   death: 0
   mainCamera: {fileID: 9167685}
 --- !u!114 &2220534434300655828
@@ -8842,7 +8843,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 5.4981904
+  m_Distance: 4.9291377
   m_MaxDistanceOnly: 0
 --- !u!4 &2220534434300655830
 Transform:
@@ -8852,7 +8853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2220534434300655826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.49, y: 0.3, z: 0}
+  m_LocalPosition: {x: -4.92, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2220534434849160134}
