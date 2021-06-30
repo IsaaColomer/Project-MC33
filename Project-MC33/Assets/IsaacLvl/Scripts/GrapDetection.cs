@@ -9,7 +9,7 @@ public class GrapDetection : MonoBehaviour
     public LineRenderer _lineRenderer;
     public DistanceJoint2D _distanceJoint;
     public Vector2 grapPosO;
-
+    public GameObject sprite01;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,10 +50,12 @@ public class GrapDetection : MonoBehaviour
             //Debug.Log("Grap!");
             grapPosO = col.transform.position;
             grapOn = true;
+            sprite01.SetActive(true);
         }
         else
         {
             grapOn = false;
+            sprite01.SetActive(false);
         }
     }
 }
