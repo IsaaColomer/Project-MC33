@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FallRestart : MonoBehaviour
 {
+    public bool dead = false;
     public Rigidbody2D rb;
     public Vector3 startPos;
     public Vector3 restartPos;
@@ -36,14 +37,20 @@ public class FallRestart : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+    if(col.gameObject.layer == LayerMask.NameToLayer("Ground"))
+    {
+        dead = false;
+    }
     if(col.gameObject.layer == LayerMask.NameToLayer("Spikes"))
     {
+        dead = true;
+        
         GameObject grap = GameObject.Find("PlayerGeneral");
         GrapDetection grap2 = grap.GetComponent<GrapDetection>();
 
         GameObject lol = GameObject.Find("PlayerGeneral");
         GrapDetection lol2 = lol.GetComponent<GrapDetection>();
- rb.transform.position = startPos;
+        rb.transform.position = startPos;
         lol2.grapOn = false;
         grap2._distanceJoint.enabled = false;
        
@@ -58,6 +65,9 @@ public class FallRestart : MonoBehaviour
     }
     if(col.gameObject.layer == LayerMask.NameToLayer("Fall"))
     {
+        dead = true;
+        rb.transform.position = startPos;
+
         GameObject grap = GameObject.Find("PlayerGeneral");
         GrapDetection grap2 = grap.GetComponent<GrapDetection>();
 
@@ -67,7 +77,6 @@ public class FallRestart : MonoBehaviour
         lol2.grapOn = false;
         grap2._distanceJoint.enabled = false;
 
-        rb.transform.position = startPos;
         // rj1.SetActive(true);
         // rj2.SetActive(true);
         // rj3.SetActive(true);
@@ -80,7 +89,7 @@ public class FallRestart : MonoBehaviour
         death++;
     }
     }
-     public Camera mainCamera;
+    public Camera mainCamera;
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
