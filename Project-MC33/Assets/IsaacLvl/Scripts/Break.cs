@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Break : MonoBehaviour
 {
-    public float time = 3f;
+    public float time;
     public GameObject platform;
     public SpriteRenderer me;
     public Collider2D breakCol;
-    public float alphaLvl = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
+        time = 1f;
         breakCol = GetComponent<Collider2D>();
     }
 
@@ -25,7 +25,7 @@ public class Break : MonoBehaviour
         {
             me.color = new Color(1f,1f,1f,1f);
             breakCol.enabled = true;
-            time = 3f;
+            time = 1f;
         }
 
     }
