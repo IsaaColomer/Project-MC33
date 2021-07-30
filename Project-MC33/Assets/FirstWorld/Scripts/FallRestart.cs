@@ -43,10 +43,10 @@ public class FallRestart : MonoBehaviour
 
         GameObject lol = GameObject.Find("PlayerGeneral");
         GrapDetection lol2 = lol.GetComponent<GrapDetection>();
-
+ rb.transform.position = startPos;
         lol2.grapOn = false;
         grap2._distanceJoint.enabled = false;
-        rb.transform.position = startPos;
+       
         // rj1.SetActive(true);
         // rj2.SetActive(true);
         // rj3.SetActive(true);
