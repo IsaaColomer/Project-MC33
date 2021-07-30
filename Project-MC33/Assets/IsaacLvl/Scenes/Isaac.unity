@@ -3886,7 +3886,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 3
   platform: {fileID: 1577507071}
+  me: {fileID: 1577507074}
   breakCol: {fileID: 0}
+  alphaLvl: 50
 --- !u!61 &1577507073
 BoxCollider2D:
   m_ObjectHideFlags: 0

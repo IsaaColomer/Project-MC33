@@ -6,7 +6,9 @@ public class Break : MonoBehaviour
 {
     public float time = 3f;
     public GameObject platform;
+    public SpriteRenderer me;
     public Collider2D breakCol;
+    public float alphaLvl = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class Break : MonoBehaviour
 
         if(grap2.dead == true)
         {
+            me.color = new Color(1f,1f,1f,1f);
             breakCol.enabled = true;
             time = 3f;
         }
@@ -28,6 +31,7 @@ public class Break : MonoBehaviour
     }
     void OnCollisionStay2D(Collision2D col)
     {
+        me.color = new Color(1f,1f,1f,time);
         if(time <= 0)
         {
             breakCol.enabled = !breakCol.enabled;
