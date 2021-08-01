@@ -13,7 +13,7 @@ public class DestroyOnTouch : MonoBehaviour
         //doubleJamp.SetActive(true);
         breakCol = GetComponent<Collider2D>();
         sprite = GetComponent<SpriteRenderer>();
-        breakCol.enabled = true;
+        //breakCol.enabled = true;
     }
 
     // Update is called once per frame
