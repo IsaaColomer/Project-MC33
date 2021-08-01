@@ -457,6 +457,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001414, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7618195254d450345a2c10a3eb3c31dd, type: 3}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.x
+      value: 3.3256881
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.y
+      value: 3.3644574
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.012937427
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.032331824
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3297672687323001417, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -16532,6 +16560,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001414, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7618195254d450345a2c10a3eb3c31dd, type: 3}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.x
+      value: 3.248128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.y
+      value: 3.2480638
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.012966156
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.025865674
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3297672687323001417, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -17834,6 +17890,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001414, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7618195254d450345a2c10a3eb3c31dd, type: 3}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.x
+      value: 3.325753
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.y
+      value: 3.4161956
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.012976766
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0194
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3297672687323001417, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -18015,6 +18099,34 @@ PrefabInstance:
     - target: {fileID: 3297672687323001412, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_Name
       value: CheckPoint (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001414, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7618195254d450345a2c10a3eb3c31dd, type: 3}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.x
+      value: 3.28694
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.y
+      value: 3.3127275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0064868927
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0064665675
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 3297672687323001417, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_RootOrder
@@ -18610,6 +18722,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001414, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7618195254d450345a2c10a3eb3c31dd, type: 3}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.x
+      value: 3.3682332
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.y
+      value: 3.3850398
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.025263548
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.016844809
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3297672687323001417, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -18733,6 +18873,38 @@ PrefabInstance:
     - target: {fileID: 3297672687323001412, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_Name
       value: CheckPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001414, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001414, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7618195254d450345a2c10a3eb3c31dd, type: 3}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.x
+      value: 3.1988173
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.y
+      value: 3.307954
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.00000035762787
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 3297672687323001417, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_RootOrder
@@ -19044,6 +19216,34 @@ PrefabInstance:
     - target: {fileID: 3297672687323001412, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_Name
       value: CheckPoint (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001414, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7618195254d450345a2c10a3eb3c31dd, type: 3}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.x
+      value: 3.1963995
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Size.y
+      value: 3.3256693
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.02585423
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.025865495
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297672687323001415, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 3297672687323001417, guid: ff3e05326cf1d5840a7aff4472dd0fe6, type: 3}
       propertyPath: m_RootOrder
