@@ -30,11 +30,7 @@ public class FallRestart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("r"))
-        {
-            Debug.Log("R");
-           rb.transform.position = restartPos;   
-        }
+
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -72,7 +68,7 @@ public class FallRestart : MonoBehaviour
     if(col.gameObject.layer == LayerMask.NameToLayer("Fall"))
     {
         
-restartDoubleJump = true;
+        restartDoubleJump = true;
         dead = true;
         rb.transform.position = startPos;
 

@@ -12,7 +12,6 @@ public class DestroyOnTouch : MonoBehaviour
     {
         //doubleJamp.SetActive(true);
         breakCol = GetComponent<Collider2D>();
-        sprite = GetComponent<SpriteRenderer>();
         //breakCol.enabled = true;
     }
 
@@ -28,8 +27,7 @@ public class DestroyOnTouch : MonoBehaviour
         }
     }
   void OnTriggerEnter2D(Collider2D col)
-    {        //Detecting the Grid Position of Player
-        
+    {               
         breakCol.enabled = false;
         sprite.enabled = false;
     }

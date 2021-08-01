@@ -21,13 +21,7 @@ public class CheckPoints : MonoBehaviour
     {
         
     }
-
-    // void ChangeSprite()
-    // {
-        
-    // }
-    
-
+  
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Player"))
