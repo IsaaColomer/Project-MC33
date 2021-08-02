@@ -13,11 +13,8 @@ public class QuitGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject save01 = GameObject.Find("PlayerGeneral");
-        MovementFirst save02 = save01.GetComponent<MovementFirst>();
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            save02.SavePlayer();
             Debug.Log("player position saved!");
             PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene("Options");

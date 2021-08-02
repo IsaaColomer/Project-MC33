@@ -26,6 +26,7 @@ public class CheckPoints : MonoBehaviour
         chRb = gameObject.GetComponent<Rigidbody2D>();
     }
 
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Player"))

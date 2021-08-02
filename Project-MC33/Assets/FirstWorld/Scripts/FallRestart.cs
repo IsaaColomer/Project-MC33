@@ -12,6 +12,8 @@ public class FallRestart : MonoBehaviour
     public Vector3 startPos;
     public Vector3 restartPos;
     public int death;
+
+
     // public GameObject rj1;
     // public GameObject rj2;
     // public GameObject rj3;
@@ -23,8 +25,27 @@ public class FallRestart : MonoBehaviour
     void Start()
     {
         death = 0;
-        startPos = rb.transform.position;
-        restartPos = startPos;
+        //startPos = rb.transform.position;
+        //restartPos = startPos;
+
+        GameObject posF0 = GameObject.Find("Fuck");
+        Load posF9 = posF0.GetComponent<Load>();
+
+        if(posF9.newPosition == true)
+        {
+            Debug.Log("LOADING POSITION");
+            GameObject posF = GameObject.Find("PlayerGeneral");
+            FallRestart posF1 = posF.GetComponent<FallRestart>();
+
+            GameObject posF2 = GameObject.Find("PlayerGeneral");
+            MovementFirst posF3 = posF2.GetComponent<MovementFirst>();
+
+            posF3.player.transform.position = startPos;
+
+            Debug.Log("Bool:  " + posF9.newPosition);
+            posF9.newPosition = false;
+        }
+
     }
 
     // Update is called once per frame

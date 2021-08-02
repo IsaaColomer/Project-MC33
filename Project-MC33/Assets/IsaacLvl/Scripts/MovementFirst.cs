@@ -86,7 +86,7 @@ public class MovementFirst : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
 
-        player.transform.position = new Vector3(10000f,0f,0f);
+        player.transform.position = position;
 
         Destroy(player);
     }
