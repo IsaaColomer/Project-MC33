@@ -28,7 +28,6 @@ public class KnowLevel : MonoBehaviour
             {
                 level = 2;
             }
-            Debug.Log("Level = " + level);
         }
 
     }

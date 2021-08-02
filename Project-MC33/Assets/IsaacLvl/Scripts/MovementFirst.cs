@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovementFirst : MonoBehaviour
 {
     public CharacterController2D controller;
+    public GameObject player;
     public bool isGrounded = false;
     public bool doubleJump;
     [SerializeField] private LayerMask GroundMask;
@@ -14,6 +15,11 @@ public class MovementFirst : MonoBehaviour
     public CapsuleCollider2D capsCol;
     float horizontalMove = 0f;
     public Collider2D attachCol;
+
+    public void Awake()
+    {
+        //DontDestroyOnLoad(this.gameObject);
+    }
 
     // Start is called before the first frame update
     private void Update()
@@ -66,5 +72,20 @@ public class MovementFirst : MonoBehaviour
         {
             doubleJump = true;
         }
+    }
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+
+        player.transform.position = position;
     }
 }

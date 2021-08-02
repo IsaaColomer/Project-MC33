@@ -36,13 +36,4 @@ public class CheckPoints : MonoBehaviour
         }
     }
         // Start is called before the first frame update
-    public void LoadGameSaved()
-    {
-        GameObject pos03 = GameObject.Find("PlayerGeneral");
-        FallRestart pos04 = pos03.GetComponent<FallRestart>();
-        pos04.startPos = posPlayer;
-
-        SceneManager.LoadScene("Lvl1");
-
-    }
 }
