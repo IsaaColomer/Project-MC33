@@ -9,15 +9,15 @@ public class Load : MonoBehaviour
     // Start is called before the first frame update
     public void LoadGame()
     {
-        GameObject save01 = GameObject.Find("PlayerGeneral");
-        MovementFirst save02 = save01.GetComponent<MovementFirst>();
-
-        save02.LoadPlayer();
         Debug.Log("Player position Loaded");
-        // GameObject pos01 = GameObject.Find("KnowLvl");
-        // KnowLevel pos02 = pos01.GetComponent<KnowLevel>();
-        
-        // SceneManager.LoadScene(pos02.level);
-        SceneManager.LoadScene("Lvl1");
+        SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
+
+        GameObject pos01 = GameObject.Find("CheckPoints");
+        CheckPoints pos02 = pos01.GetComponent<CheckPoints>();
+
+        GameObject posF = GameObject.Find("PlayerGeneral");
+        MovementFirst posF1 = posF.GetComponent<MovementFirst>();
+
+        posF1.player.transform.position = pos02.posPlayer;
     }
 }

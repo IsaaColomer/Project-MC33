@@ -17,8 +17,9 @@ public class QuitGame : MonoBehaviour
         MovementFirst save02 = save01.GetComponent<MovementFirst>();
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            save02.SavePlayer();
+            //save02.SavePlayer();
             Debug.Log("player position saved!");
+            PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene("Options");
         }
     }
