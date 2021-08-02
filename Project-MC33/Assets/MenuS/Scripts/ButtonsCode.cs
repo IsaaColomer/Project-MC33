@@ -10,6 +10,10 @@ public class ButtonsCode : MonoBehaviour
    {
        SceneManager.LoadScene("Lvl1");
    }
+   public void Options()
+   {
+       SceneManager.LoadScene("Options");
+   }
    public void Quit()
    {
        Debug.Log("Quit");

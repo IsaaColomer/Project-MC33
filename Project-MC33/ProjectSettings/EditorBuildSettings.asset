@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/IsaacLvl/Scenes/Isaac.unity
     guid: 14b28128d8dfa144b8aec768a2812534
+  - enabled: 1
+    path: Assets/MenuS/Options.unity
+    guid: d300fa1fef4595640868ddd95a5c0ccf
   m_configObjects: {}
