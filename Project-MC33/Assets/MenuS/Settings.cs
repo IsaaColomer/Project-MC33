@@ -37,6 +37,12 @@ public class Settings : MonoBehaviour
        resolutionDrop.value = curr;
        resolutionDrop.RefreshShownValue();
     }
+
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
     // Start is called before the first frame update
     public void SetVolume(float volume)
     {

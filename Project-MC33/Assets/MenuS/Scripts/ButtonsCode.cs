@@ -19,4 +19,10 @@ public class ButtonsCode : MonoBehaviour
        Debug.Log("Quit");
        Application.Quit();
    }
+
+   public void Title()
+   {
+       Debug.Log("Quit");
+       SceneManager.LoadScene("StartMenu");
+   }
 }

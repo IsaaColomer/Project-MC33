@@ -11,6 +11,7 @@ TagManager:
   - ChangeLvl
   - Bullet
   - Break
+  - Music
   layers:
   - Default
   - TransparentFX

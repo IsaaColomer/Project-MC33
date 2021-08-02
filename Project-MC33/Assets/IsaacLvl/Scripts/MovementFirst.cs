@@ -15,14 +15,7 @@ public class MovementFirst : MonoBehaviour
     float horizontalMove = 0f;
     public Collider2D attachCol;
 
-    public AudioSource jumpFx;
-
     // Start is called before the first frame update
-    private void Awake()
-    {
-        jumpFx = gameObject.GetComponent<AudioSource>();
-    }
-
     private void Update()
     {
         if(IsGrounded())
@@ -37,7 +30,6 @@ public class MovementFirst : MonoBehaviour
             if(IsGrounded())
             {
                 rb.velocity = (Vector2.up) * jumpVel;
-                jumpFx.Play();
             } else
             {
                 if(doubleJump)
@@ -46,8 +38,7 @@ public class MovementFirst : MonoBehaviour
                     doubleJump = false;
                 }
             }
-        }
-             
+        }             
     }
    
     private bool IsGrounded()
