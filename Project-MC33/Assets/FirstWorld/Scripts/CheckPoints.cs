@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class CheckPoints : MonoBehaviour
 {
     public Vector3 startPos2;
@@ -10,6 +11,7 @@ public class CheckPoints : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite;
     public Vector2 posPlayer;
+    public bool check;
 
     public static int allChecks = 8;
     public bool saved;
@@ -18,6 +20,7 @@ public class CheckPoints : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        check = false;
         contact = false;
         
         saved = false;
@@ -44,6 +47,7 @@ public class CheckPoints : MonoBehaviour
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            check = true;
             contact = true;
             saved = true;
 
@@ -52,7 +56,7 @@ public class CheckPoints : MonoBehaviour
             pos02.startPos = chRb.transform.position;
 
             posPlayer = new Vector2(chRb.transform.position.x, chRb.transform.position.y);
-            //SaveMangerDone.instance.Save();
+            
             SaveMangerDone.instance.activeSave.respawnPosition = posPlayer;
             SaveMangerDone.instance.Save();
             spriteRenderer.sprite = newSprite;

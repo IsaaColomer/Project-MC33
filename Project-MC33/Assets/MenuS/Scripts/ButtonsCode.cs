@@ -7,22 +7,20 @@ public class ButtonsCode : MonoBehaviour
 {
     // Start is called before the first frame update
    public void Play()
-   {
-       SceneManager.LoadScene("Lvl1");
-   }
+    {    
+        SceneManager.LoadScene("Lvl1");
+    }
    public void Options()
-   {
+    {
        SceneManager.LoadScene("Options");
-   }
+    }
    public void Quit()
-   {
-       Debug.Log("Quit");
+    {
        Application.Quit();
-   }
+    }
 
    public void Title()
-   {
-       Debug.Log("Quit");
+    {
        SceneManager.LoadScene("StartMenu");
-   }
+    }
 }

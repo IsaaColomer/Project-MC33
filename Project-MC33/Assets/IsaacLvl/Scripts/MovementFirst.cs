@@ -18,10 +18,20 @@ public class MovementFirst : MonoBehaviour
 
     public void Awake()
     {
-        //DontDestroyOnLoad(this.gameObject);
+        GameObject p = GameObject.Find("Saving");
+        SaveMangerDone h = p.GetComponent<SaveMangerDone>();
+
+      
+            GameObject pos03 = GameObject.Find("PlayerGeneral");
+            FallRestart pos04 = pos03.GetComponent<FallRestart>();
+            pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
+            SaveMangerDone.instance.Load();
+
+            // GameObject m = GameObject.Find("PlayerGeneral");
+            // FallRestart n = m.GetComponent<FallRestart>();
+            // n.rb.transform.position = new Vector3(-25.57f,2.36f,0f);    
     }
 
-    // Start is called before the first frame update
     private void Update()
     {
         if(IsGrounded())
@@ -49,7 +59,7 @@ public class MovementFirst : MonoBehaviour
    
     private bool IsGrounded()
     {
-       RaycastHit2D rayCasthit2D = Physics2D.BoxCast(capsCol.bounds.center, capsCol.bounds.size, 0f, Vector2.down, 1f, GroundMask);
+        RaycastHit2D rayCasthit2D = Physics2D.BoxCast(capsCol.bounds.center, capsCol.bounds.size, 0f, Vector2.down, 1f, GroundMask);
         if(rayCasthit2D.collider != null)
         {
             isGrounded = true;
@@ -72,22 +82,5 @@ public class MovementFirst : MonoBehaviour
         {
             doubleJump = true;
         }
-    }
-
-    public void SavePlayer()
-    {
-        SaveSystem.SavePlayer(this);
-    }
-    public void LoadPlayer()
-    {
-        PlayerData data = SaveSystem.LoadPlayer();
-        Vector3 position;
-        position.x = data.position[0];
-        position.y = data.position[1];
-        position.z = data.position[2];
-
-        player.transform.position = position;
-
-        Destroy(player);
     }
 }

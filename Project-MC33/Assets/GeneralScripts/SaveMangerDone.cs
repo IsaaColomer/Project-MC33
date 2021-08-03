@@ -13,10 +13,11 @@ public class SaveMangerDone : MonoBehaviour
 
     public bool hasLoaded;
 
+    public bool newGame;
+
     public void Awake()
     {
         instance = this;
-
         Load();
     }
     // Start is called before the first frame update
@@ -38,8 +39,7 @@ public class SaveMangerDone : MonoBehaviour
             GameObject pos03 = GameObject.Find("PlayerGeneral");
             FallRestart pos04 = pos03.GetComponent<FallRestart>();
             pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
-            Load();
-            
+            Load();            
         }
         if(Input.GetKeyDown(KeyCode.P))
         {
@@ -90,5 +90,4 @@ public class SaveData
     public string saveName;
 
     public Vector3 respawnPosition;
-
 }
