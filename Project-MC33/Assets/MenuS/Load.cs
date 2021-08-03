@@ -10,7 +10,14 @@ public class Load : MonoBehaviour
     public void LoadGame()
     {        
         SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
-        newPosition = true;
+
+        // GameObject lol = GameObject.Find("Saving");
+        // SaveMangerDone lol1 = lol.GetComponent<SaveMangerDone>();
+
+        SaveMangerDone.instance.Save();
+        //lol1.Load();
+
+        //newPosition = true;
     }
     public void LoadPosition()
     {                                    

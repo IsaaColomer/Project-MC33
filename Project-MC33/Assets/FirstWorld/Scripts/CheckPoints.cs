@@ -24,6 +24,19 @@ public class CheckPoints : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         restartPos2 = startPos2;
         chRb = gameObject.GetComponent<Rigidbody2D>();
+
+        if(SaveMangerDone.instance.hasLoaded)
+        {
+            GameObject pos03 = GameObject.Find("PlayerGeneral");
+            FallRestart pos04 = pos03.GetComponent<FallRestart>();
+            pos04.startPos = SaveMangerDone.instance.activeSave.respawnPosition;
+        }
+        else
+        {
+            GameObject pos03 = GameObject.Find("PlayerGeneral");
+            FallRestart pos04 = pos03.GetComponent<FallRestart>();
+            pos04.startPos = new Vector3(-25.57f,2.36f,0f);            
+        }
     }
 
 
@@ -39,8 +52,9 @@ public class CheckPoints : MonoBehaviour
             pos02.startPos = chRb.transform.position;
 
             posPlayer = new Vector2(chRb.transform.position.x, chRb.transform.position.y);
-            spriteRenderer.sprite = newSprite;
-            
+            //SaveMangerDone.instance.Save();
+            SaveMangerDone.instance.activeSave.respawnPosition = posPlayer;
+            spriteRenderer.sprite = newSprite;            
         }
     }
 }

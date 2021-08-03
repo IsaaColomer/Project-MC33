@@ -31,21 +31,6 @@ public class FallRestart : MonoBehaviour
         GameObject posF0 = GameObject.Find("Fuck");
         Load posF9 = posF0.GetComponent<Load>();
 
-        if(posF9.newPosition == true)
-        {
-            Debug.Log("LOADING POSITION");
-            GameObject posF = GameObject.Find("PlayerGeneral");
-            FallRestart posF1 = posF.GetComponent<FallRestart>();
-
-            GameObject posF2 = GameObject.Find("PlayerGeneral");
-            MovementFirst posF3 = posF2.GetComponent<MovementFirst>();
-
-            posF3.player.transform.position = startPos;
-
-            Debug.Log("Bool:  " + posF9.newPosition);
-            posF9.newPosition = false;
-        }
-
     }
 
     // Update is called once per frame
