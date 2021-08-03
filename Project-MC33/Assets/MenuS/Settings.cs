@@ -12,7 +12,7 @@ public class Settings : MonoBehaviour
 
     Resolution[] resolutions;
 
-    void Start()
+    public void Start()
     {
        resolutions = Screen.resolutions;
 
