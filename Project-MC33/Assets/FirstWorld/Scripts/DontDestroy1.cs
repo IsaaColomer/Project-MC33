@@ -12,9 +12,7 @@ public class DontDestroy1 : MonoBehaviour
         {
             Debug.Log("Created player!!");
             playerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-
-            
+            DontDestroyOnLoad(transform.gameObject);            
         }
         else
         {

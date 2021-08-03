@@ -28,8 +28,8 @@ public class FallRestart : MonoBehaviour
         //startPos = rb.transform.position;
         //restartPos = startPos;
 
-        GameObject posF0 = GameObject.Find("Fuck");
-        Load posF9 = posF0.GetComponent<Load>();
+        // GameObject posF0 = GameObject.Find("Fuck");
+        // Load posF9 = posF0.GetComponent<Load>();
 
     }
 

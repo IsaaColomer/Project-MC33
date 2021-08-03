@@ -55,7 +55,7 @@ public class CheckPoints : MonoBehaviour
             //SaveMangerDone.instance.Save();
             SaveMangerDone.instance.activeSave.respawnPosition = posPlayer;
             SaveMangerDone.instance.Save();
-            spriteRenderer.sprite = newSprite;            
+            spriteRenderer.sprite = newSprite;
         }
     }
 }
