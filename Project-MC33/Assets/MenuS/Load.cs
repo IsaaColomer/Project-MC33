@@ -11,11 +11,11 @@ public class Load : MonoBehaviour
     {        
         SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
 
-        // GameObject lol = GameObject.Find("Saving");
-        // SaveMangerDone lol1 = lol.GetComponent<SaveMangerDone>();
+         GameObject lol = GameObject.Find("Saving");
+         SaveMangerDone lol1 = lol.GetComponent<SaveMangerDone>();
 
-        SaveMangerDone.instance.Save();
-        //lol1.Load();
+        SaveMangerDone.instance.Load();
+        lol1.Load();
 
         //newPosition = true;
     }
