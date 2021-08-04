@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class MovementFirst : MonoBehaviour
 {
     public CharacterController2D controller;
@@ -16,20 +16,41 @@ public class MovementFirst : MonoBehaviour
     float horizontalMove = 0f;
     public Collider2D attachCol;
 
+    public Scene scene;
+
     public void Awake()
     {
-        GameObject p = GameObject.Find("Saving");
-        SaveMangerDone h = p.GetComponent<SaveMangerDone>();
+        scene = SceneManager.GetActiveScene();
 
+        if(scene.name == "Lvl1")
+        {
+            GameObject p = GameObject.Find("Saving");
+            SaveMangerDone h = p.GetComponent<SaveMangerDone>();
       
             GameObject pos03 = GameObject.Find("PlayerGeneral");
             FallRestart pos04 = pos03.GetComponent<FallRestart>();
             pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
             SaveMangerDone.instance.Load();
+        }
+        else
+        {
+            GameObject pzz = GameObject.Find("CheckPoints");
+            CheckPoints hzz = pzz.GetComponent<CheckPoints>();
+            if(hzz.firstSaveLvl2 == true)
+            {
+            GameObject posasd = GameObject.Find("PlayerGeneral");
+            FallRestart posf = posasd.GetComponent<FallRestart>();
+            posf.rb.transform.position = new Vector3(-4.61f, 9.07f,0f);
+            SaveMangerDone.instance.Load();
+            }
+            else
+            {
+                GameObject o = GameObject.Find("PlayerGeneral");
+                FallRestart f = o.GetComponent<FallRestart>();
+                f.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
+            }
+        }
 
-            // GameObject m = GameObject.Find("PlayerGeneral");
-            // FallRestart n = m.GetComponent<FallRestart>();
-            // n.rb.transform.position = new Vector3(-25.57f,2.36f,0f);    
     }
 
     private void Update()

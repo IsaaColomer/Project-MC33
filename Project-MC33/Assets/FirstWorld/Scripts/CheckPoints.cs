@@ -17,9 +17,13 @@ public class CheckPoints : MonoBehaviour
     public bool saved;
     public int currentCheck = 0;
     public bool contact;
+    public bool firstSaveLvl2;
+
+    public Scene scene;
     // Start is called before the first frame update
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
         check = false;
         contact = false;
         
@@ -47,6 +51,14 @@ public class CheckPoints : MonoBehaviour
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            if(scene.name == "Isaac")
+            {
+                firstSaveLvl2 = true;
+            }
+            else
+            {
+                firstSaveLvl2 = false;
+            }
             check = true;
             contact = true;
             saved = true;

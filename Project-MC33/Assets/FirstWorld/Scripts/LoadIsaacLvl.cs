@@ -5,21 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LoadIsaacLvl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-        void OnTriggerExit2D(Collider2D coll)
+    public GameObject player;
+    void OnTriggerExit2D(Collider2D coll)
     {
         if(coll.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            Destroy(player);
+            Debug.Log("Player Destroyed");
             SceneManager.LoadScene("Isaac");
         }
     }
