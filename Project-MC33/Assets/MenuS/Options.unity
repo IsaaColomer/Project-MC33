@@ -339,10 +339,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1022887778}
   m_HandleRect: {fileID: 1619798848}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 0
+  m_MinValue: -50
+  m_MaxValue: 50
   m_WholeNumbers: 0
-  m_Value: -16
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1018,6 +1018,9 @@ MonoBehaviour:
   saved: 0
   currentCheck: 0
   contact: 0
+  firstSaveLvl2: 0
+  scene:
+    m_Handle: 0
 --- !u!114 &1011241587
 MonoBehaviour:
   m_ObjectHideFlags: 0

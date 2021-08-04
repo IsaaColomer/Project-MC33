@@ -23,4 +23,8 @@ public class ButtonsCode : MonoBehaviour
     {
        SceneManager.LoadScene("StartMenu");
     }
+       public void Opt()
+    {
+       SceneManager.LoadScene("Opt");
+    }
 }
