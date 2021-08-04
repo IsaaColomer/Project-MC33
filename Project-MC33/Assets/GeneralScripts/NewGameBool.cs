@@ -9,5 +9,6 @@ public class NewGameBool : MonoBehaviour
     public void Start()
     {
         newGame = true;
+        SaveMangerDone.instance.DeleteSavedData();
     }
 }

@@ -81,6 +81,10 @@ public class SaveMangerDone : MonoBehaviour
         {
             File.Delete(dataPath + "/" + activeSave.saveName + ".save");
         }
+        GameObject pos = GameObject.Find("PlayerGeneral");
+        FallRestart posd = pos.GetComponent<FallRestart>();
+        posd.rb.transform.position = new Vector3(-25.8f,0f,0f);
+        Debug.Log("New Position");
     }
 }
 
