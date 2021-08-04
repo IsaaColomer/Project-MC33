@@ -147,25 +147,67 @@ public class FallRestart : MonoBehaviour
             }
              if(other.gameObject.name == "ChageLevel08")
             {
-                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
                 //startPos = rb.transform.position;      
             }
              if(other.gameObject.name == "ChageLevel09")
             {
                 restartDoubleJump = true;
-                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
                 //startPos = rb.transform.position;      
             }
              if(other.gameObject.name == "ChageLevel10")
             {
                 restartDoubleJump = true;
-                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
                // startPos = rb.transform.position;      
             }
              if(other.gameObject.name == "ChageLevel11")
             {
                 restartDoubleJump = true;
-                mainCamera.transform.position = new Vector3(other.transform.position.x,0f,-9.8f);
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
+                //startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel12")
+            {
+                restartDoubleJump = true;
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
+                //startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel13")
+            {
+                restartDoubleJump = true;
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
+                //startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel14")
+            {
+                restartDoubleJump = true;
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
+                //startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel15")
+            {
+                restartDoubleJump = true;
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
+                //startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel16")
+            {
+                restartDoubleJump = true;
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
+                //startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel17")
+            {
+                restartDoubleJump = true;
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
+                //startPos = rb.transform.position;      
+            }
+             if(other.gameObject.name == "ChageLevel18")
+            {
+                restartDoubleJump = true;
+                mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
                 //startPos = rb.transform.position;      
             }
 
