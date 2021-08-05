@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MenuS/Opt.unity
     guid: f18bc86f34a5fca409c9bbab9bc5bee4
+  - enabled: 1
+    path: Assets/MenuS/Thx.unity
+    guid: e7b4645ca3ce9f34ea25840732495fa0
   m_configObjects: {}
