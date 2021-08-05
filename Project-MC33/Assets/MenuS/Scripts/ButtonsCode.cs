@@ -23,7 +23,6 @@ public class ButtonsCode : MonoBehaviour
 
    public void Title()
     {
-       musicGame.SetActive(false);
        SceneManager.LoadScene("StartMenu");
     }
        public void Opt()
