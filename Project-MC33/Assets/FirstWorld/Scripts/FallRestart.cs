@@ -103,6 +103,22 @@ public class FallRestart : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.gameObject.layer == LayerMask.NameToLayer("Enemies"))
+    {
+        GameObject a = GameObject.Find("PlayerGeneral");
+        GrapDetection a1 = a.GetComponent<GrapDetection>();
+
+        GameObject b = GameObject.Find("PlayerGeneral");
+        GrapDetection b1 = b.GetComponent<GrapDetection>();
+
+        rb.transform.position = startPos;
+        b1.grapOn = false;
+        a1._distanceJoint.enabled = false;
+
+        restartDoubleJump = true;
+        dead = true;
+        death++;
+    }
             if(other.gameObject.name == "ChageLevel01")
             {
                 restartDoubleJump = true;

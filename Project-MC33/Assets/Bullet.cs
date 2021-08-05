@@ -33,6 +33,12 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             count2.bulletCount--;
         }
+        if(col.gameObject.layer == LayerMask.NameToLayer("Enemies"))
+        {
+            Debug.Log("Enemy Detected!");
+            Destroy(gameObject);
+            count2.bulletCount--;
+        }
         // if(col.gameObject.layer == LayerMask.NameToLayer("Player"))
         // {
         //     Debug.Log("Player Detected!");
