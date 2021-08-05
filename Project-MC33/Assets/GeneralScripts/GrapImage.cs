@@ -6,7 +6,7 @@ public class GrapImage : MonoBehaviour
 {
     public SpriteRenderer sprite;
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         GameObject grap = GameObject.Find("PlayerGeneral");
         GrapDetection grap2 = grap.GetComponent<GrapDetection>();
@@ -20,5 +20,14 @@ public class GrapImage : MonoBehaviour
             sprite.enabled = false;
         }
         
+    }
+
+    public void OnMouseOver()
+    {
+        sprite.enabled = false;
+    }
+    public void OnMouseExit()
+    {
+        sprite.enabled = true;
     }
 }
