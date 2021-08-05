@@ -40,17 +40,18 @@ public class EnemySpawnerScript : MonoBehaviour
         else
         {
             spawn = true;
-        }  
-
-        
+        }          
     }
     void OnTriggerStay2D(Collider2D col)
-    {            
-         
+    {                     
         if(col.gameObject.layer == LayerMask.NameToLayer("Player") && spawn == true)
         {
             Instantiate(enemy, new Vector3(transform.position.x+randomX, transform.position.y+randomY, 0f) , transform.rotation);
             timeUntilNewSpawn = 2f;
         }
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        
     }
 }
