@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonsCode : MonoBehaviour
 {
+   public GameObject musicGame;
+   //public bool cock;
     // Start is called before the first frame update
    public void Play()
     {    
@@ -21,6 +23,7 @@ public class ButtonsCode : MonoBehaviour
 
    public void Title()
     {
+       musicGame.SetActive(false);
        SceneManager.LoadScene("StartMenu");
     }
        public void Opt()
