@@ -38,8 +38,8 @@ TagManager:
   - CheckPoint
   - Enemies
   - Aim
-  - 
-  - 
+  - ChangeDirectionLeft
+  - ChangeDirectionRight
   - 
   - 
   - 

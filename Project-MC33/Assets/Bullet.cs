@@ -13,8 +13,7 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         GameObject count = GameObject.Find("PlayerGeneral");
-        Weapon count2 = count.GetComponent<Weapon>();
-      
+        Weapon count2 = count.GetComponent<Weapon>();      
 
         if(col.gameObject.layer == LayerMask.NameToLayer("DestroyBullet"))
         {
