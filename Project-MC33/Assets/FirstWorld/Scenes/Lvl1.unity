@@ -47004,6 +47004,7 @@ MonoBehaviour:
   chRb: {fileID: 0}
   startPos: {x: 0, y: 0, z: 0}
   restartPos: {x: 0, y: 0, z: 0}
+  walEnemyCol: {fileID: 4352373888183208058, guid: 1b464b693b5ca4543883476ccfc48b9a, type: 3}
   death: 0
   mainCamera: {fileID: 1205822107}
 --- !u!50 &6972700509974429638
