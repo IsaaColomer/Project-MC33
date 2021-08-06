@@ -7,7 +7,8 @@
  
      private float time;
  
-     void Update() {
+     void Update()
+     {
          time += Time.deltaTime;
  
          var minutes = time / 60; //Divide the guiTime by sixty to get the minutes.

@@ -34,6 +34,11 @@ public class SaveMangerDone : MonoBehaviour
             GameObject asd = GameObject.Find("PlayerGeneral");
             FallRestart asdf = asd.GetComponent<FallRestart>();
             asdf.death = SaveMangerDone.instance.activeSave.deaths;
+
+            GameObject yd = GameObject.Find("PlayerGeneral");
+            OnTrigEnter ass = yd.GetComponent<OnTrigEnter>();
+            ass.puntuation = SaveMangerDone.instance.activeSave.puntuation;
+
             Save();
         }  
 
@@ -99,4 +104,6 @@ public class SaveData
     public Vector3 respawnPosition;
 
     public int deaths;
+
+    public int puntuation;
 }

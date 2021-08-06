@@ -17154,6 +17154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 311697503}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
+  puntuation: 0
 --- !u!212 &311697503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18162,6 +18163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 498656157}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
+  puntuation: 0
 --- !u!212 &498656157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20217,6 +20219,100 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &956076220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 956076221}
+  - component: {fileID: 956076224}
+  - component: {fileID: 956076223}
+  - component: {fileID: 956076222}
+  m_Layer: 5
+  m_Name: Puntuation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &956076221
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956076220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1202031526}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 395, y: 383}
+  m_SizeDelta: {x: 77.024, y: 63.539}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &956076222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956076220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a096253da1658254a8a61fae0e1d225c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntLabel: {fileID: 956076223}
+  a: {fileID: 0}
+--- !u!114 &956076223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956076220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 45
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 0
+--- !u!222 &956076224
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956076220}
+  m_CullTransparentMesh: 1
 --- !u!4 &984613048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7456684881436435933, guid: 131243df7446c504c8ead91dfd95e1c5, type: 3}
@@ -20420,6 +20516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1027855032}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
+  puntuation: 0
 --- !u!212 &1027855032
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20521,7 +20618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e879fe53744d244e83487f73207f62a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerLabel: {fileID: 1043450235}
+  timerLabel: {fileID: 0}
 --- !u!114 &1043450235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20864,6 +20961,7 @@ RectTransform:
   - {fileID: 277730078}
   - {fileID: 27525571}
   - {fileID: 1043450233}
+  - {fileID: 956076221}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21378,6 +21476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1341573899}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
+  puntuation: 0
 --- !u!212 &1341573899
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21946,6 +22045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1473537293}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
+  puntuation: 0
 --- !u!212 &1473537293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22070,6 +22170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1474012886}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
+  puntuation: 0
 --- !u!212 &1474012886
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22251,6 +22352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1497877046}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
+  puntuation: 0
 --- !u!212 &1497877046
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22509,6 +22611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1631025963}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
+  puntuation: 0
 --- !u!212 &1631025963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23000,6 +23103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1842606634}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
+  puntuation: 0
 --- !u!212 &1842606634
 SpriteRenderer:
   m_ObjectHideFlags: 0
