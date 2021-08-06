@@ -31,6 +31,9 @@ public class SaveMangerDone : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            GameObject asd = GameObject.Find("PlayerGeneral");
+            FallRestart asdf = asd.GetComponent<FallRestart>();
+            asdf.death = SaveMangerDone.instance.activeSave.deaths;
             Save();
         }  
 
@@ -94,4 +97,6 @@ public class SaveData
     public string saveName;
 
     public Vector3 respawnPosition;
+
+    public int deaths;
 }

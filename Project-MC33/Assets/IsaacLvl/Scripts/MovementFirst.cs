@@ -34,6 +34,9 @@ public class MovementFirst : MonoBehaviour
         }
         else
         {
+            GameObject a = GameObject.Find("PlayerGeneral");
+            FallRestart i = a.GetComponent<FallRestart>();
+            i.death = 0;
             GameObject pzz = GameObject.Find("CheckPoints");
             CheckPoints hzz = pzz.GetComponent<CheckPoints>();
             if(hzz.firstSaveLvl2 == true)

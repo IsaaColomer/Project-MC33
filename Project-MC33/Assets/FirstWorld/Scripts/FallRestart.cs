@@ -13,24 +13,9 @@ public class FallRestart : MonoBehaviour
     public Vector3 restartPos;
     public int death;
 
-
-    // public GameObject rj1;
-    // public GameObject rj2;
-    // public GameObject rj3;
-    // public GameObject rj4;
-    // public GameObject rj5;
-    // public GameObject rj6;
-    // public GameObject rj7;
-    // Start is called before the first frame update
     void Start()
     {
-        death = 0;
-        //startPos = rb.transform.position;
-        //restartPos = startPos;
-
-        // GameObject posF0 = GameObject.Find("Fuck");
-        // Load posF9 = posF0.GetComponent<Load>();
-
+        death = SaveMangerDone.instance.activeSave.deaths;
     }
 
     // Update is called once per frame
@@ -70,6 +55,7 @@ public class FallRestart : MonoBehaviour
         // rj6.SetActive(true);
         // rj7.SetActive(true);
         death++;
+        SaveMangerDone.instance.activeSave.deaths++;
     }
     if(col.gameObject.layer == LayerMask.NameToLayer("Fall"))
     {
@@ -97,6 +83,7 @@ public class FallRestart : MonoBehaviour
 
         Debug.Log("lol");
         death++;
+        SaveMangerDone.instance.activeSave.deaths++;
     }
     }
     public Camera mainCamera;
@@ -118,6 +105,7 @@ public class FallRestart : MonoBehaviour
         restartDoubleJump = true;
         dead = true;
         death++;
+        SaveMangerDone.instance.activeSave.deaths++;
     }
             if(other.gameObject.name == "ChageLevel01")
             {
@@ -226,6 +214,5 @@ public class FallRestart : MonoBehaviour
                 mainCamera.transform.position = new Vector3(other.transform.position.x,other.transform.position.y,-9.8f);
                 //startPos = rb.transform.position;      
             }
-
     }
 }
