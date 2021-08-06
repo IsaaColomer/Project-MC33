@@ -17154,7 +17154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 311697503}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
-  puntuation: 0
 --- !u!212 &311697503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18163,7 +18162,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 498656157}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
-  puntuation: 0
 --- !u!212 &498656157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19849,6 +19847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 821705994}
+  - component: {fileID: 821705995}
   m_Layer: 0
   m_Name: AIms
   m_TagString: Untagged
@@ -19879,6 +19878,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &821705995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821705993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c480432a483c8f54bab8c1d457c78aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntuation: 0
 --- !u!4 &834721559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7456684881436435933, guid: 131243df7446c504c8ead91dfd95e1c5, type: 3}
@@ -20270,7 +20282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntLabel: {fileID: 956076223}
-  a: {fileID: 0}
+  a: {fileID: 821705995}
 --- !u!114 &956076223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20516,7 +20528,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1027855032}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
-  puntuation: 0
 --- !u!212 &1027855032
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21476,7 +21487,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1341573899}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
-  puntuation: 0
 --- !u!212 &1341573899
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22045,7 +22055,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1473537293}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
-  puntuation: 0
 --- !u!212 &1473537293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22170,7 +22179,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1474012886}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
-  puntuation: 0
 --- !u!212 &1474012886
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22352,7 +22360,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1497877046}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
-  puntuation: 0
 --- !u!212 &1497877046
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22611,7 +22618,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1631025963}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
-  puntuation: 0
 --- !u!212 &1631025963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23103,7 +23109,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1842606634}
   newSprite: {fileID: 21300000, guid: e471998472c6ee249b1ff8c5beadc6ff, type: 3}
-  puntuation: 0
 --- !u!212 &1842606634
 SpriteRenderer:
   m_ObjectHideFlags: 0
