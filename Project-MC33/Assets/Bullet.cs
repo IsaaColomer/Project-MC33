@@ -14,6 +14,7 @@ public class Bullet : MonoBehaviour
     {
         GameObject count = GameObject.Find("PlayerGeneral");
         Weapon count2 = count.GetComponent<Weapon>();
+      
 
         if(col.gameObject.layer == LayerMask.NameToLayer("DestroyBullet"))
         {
@@ -45,12 +46,5 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             count2.bulletCount--;
         }
-        // if(col.gameObject.layer == LayerMask.NameToLayer("Player"))
-        // {
-        //     Debug.Log("Player Detected!");
-        //     Destroy(gameObject);
-        //     count2.bulletCount--;
-        // }
     }
 }
-//if (GameObject.FindGameObjectsWithTag(tag).Length < 5) {        boltObject = (GameObject)Instantiate (bolt, Canon.position, Canon.rotation);      boltObject.tag = tag;    }
