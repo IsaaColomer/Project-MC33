@@ -46,4 +46,15 @@ public class Bullet : MonoBehaviour
             count2.bulletCount--;
         }
     }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        GameObject s = GameObject.Find("PlayerGeneral");
+        Weapon a = s.GetComponent<Weapon>();   
+        if(col.gameObject.layer == LayerMask.NameToLayer("WalEnemy"))
+        {
+            Debug.Log("Walk Enemy Detected!");
+            Destroy(gameObject);
+            a.bulletCount--;
+        }
+    }
 }

@@ -8,6 +8,7 @@ public class ChangeDirScript : MonoBehaviour
     public GameObject walkEn;
     public int velocity;
     public bool isLeft;
+    public BoxCollider2D enemyDeadCol;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,10 @@ public class ChangeDirScript : MonoBehaviour
         if(col.gameObject.layer == LayerMask.NameToLayer("ChangeDirectionRight"))
         {
             rb.velocity = transform.right * -(velocity+2);
+        }
+        if(col.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            Destroy(walkEn);
         }
     }
 }
