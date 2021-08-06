@@ -22,14 +22,14 @@ public class MovementFirst : MonoBehaviour
     {
         scene = SceneManager.GetActiveScene();
 
-        if(scene.name == "Lvl1")
-        {
-            GameObject pos03 = GameObject.Find("PlayerGeneral");
-            FallRestart pos04 = pos03.GetComponent<FallRestart>();
+        // if(scene.name == "Lvl1")
+        // {
+        //     GameObject pos03 = GameObject.Find("PlayerGeneral");
+        //     FallRestart pos04 = pos03.GetComponent<FallRestart>();
 
-            pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
-            SaveMangerDone.instance.Load();
-        }
+        //     pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
+        //     SaveMangerDone.instance.Load();
+        // }
     }
 
     private void Update()
