@@ -24,36 +24,12 @@ public class MovementFirst : MonoBehaviour
 
         if(scene.name == "Lvl1")
         {
-            GameObject p = GameObject.Find("Saving");
-            SaveMangerDone h = p.GetComponent<SaveMangerDone>();
-      
             GameObject pos03 = GameObject.Find("PlayerGeneral");
             FallRestart pos04 = pos03.GetComponent<FallRestart>();
+
             pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
             SaveMangerDone.instance.Load();
         }
-        else
-        {
-            GameObject a = GameObject.Find("PlayerGeneral");
-            FallRestart i = a.GetComponent<FallRestart>();
-            i.death = 0;
-            GameObject pzz = GameObject.Find("CheckPoints");
-            CheckPoints hzz = pzz.GetComponent<CheckPoints>();
-            if(hzz.firstSaveLvl2 == true)
-            {
-            GameObject posasd = GameObject.Find("PlayerGeneral");
-            FallRestart posf = posasd.GetComponent<FallRestart>();
-            posf.rb.transform.position = new Vector3(-4.61f, 9.07f,0f);
-            SaveMangerDone.instance.Load();
-            }
-            else
-            {
-                GameObject o = GameObject.Find("PlayerGeneral");
-                FallRestart f = o.GetComponent<FallRestart>();
-                f.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
-            }
-        }
-
     }
 
     private void Update()

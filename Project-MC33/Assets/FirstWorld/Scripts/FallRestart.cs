@@ -8,7 +8,6 @@ public class FallRestart : MonoBehaviour
     public bool dead = false;
     public bool restartDoubleJump = false;
     public Rigidbody2D rb;
-    public Rigidbody2D chRb;
     public Vector3 startPos;
     public Vector3 restartPos;
     public CapsuleCollider2D walEnemyCol;
@@ -46,15 +45,7 @@ public class FallRestart : MonoBehaviour
         rb.transform.position = startPos;
         lol2.grapOn = false;
         grap2._distanceJoint.enabled = false;
-        
-       
-        // rj1.SetActive(true);
-        // rj2.SetActive(true);
-        // rj3.SetActive(true);
-        // rj4.SetActive(true);
-        // rj5.SetActive(true);
-        // rj6.SetActive(true);
-        // rj7.SetActive(true);
+ 
         death++;
         SaveMangerDone.instance.activeSave.deaths++;
     }
@@ -73,14 +64,6 @@ public class FallRestart : MonoBehaviour
 
         lol2.grapOn = false;
         grap2._distanceJoint.enabled = false;
-
-        // rj1.SetActive(true);
-        // rj2.SetActive(true);
-        // rj3.SetActive(true);
-        // rj4.SetActive(true);
-        // rj5.SetActive(true);
-        // rj6.SetActive(true);
-        // rj7.SetActive(true);
 
         Debug.Log("lol");
         death++;

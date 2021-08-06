@@ -40,19 +40,7 @@ public class SaveMangerDone : MonoBehaviour
             ass.puntuation = SaveMangerDone.instance.activeSave.puntuation;
 
             Save();
-        }  
-
-        if(Input.GetKeyDown(KeyCode.L))
-        {
-            GameObject pos03 = GameObject.Find("PlayerGeneral");
-            FallRestart pos04 = pos03.GetComponent<FallRestart>();
-            pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
-            Load();            
-        }
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            DeleteSavedData();
-        }       
+        }   
     }
 
     public void Save()
@@ -101,7 +89,7 @@ public class SaveData
 {
     public string saveName;
 
-    public Vector3 respawnPosition;
+    public Vector3 respawnPosition = new Vector3(-25f,-2f,0f);
 
     public int deaths;
 

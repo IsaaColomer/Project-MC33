@@ -10,7 +10,7 @@ public class ButtonsCode : MonoBehaviour
     // Start is called before the first frame update
    public void Play()
     {    
-        SceneManager.LoadScene("Lvl1");
+      SceneManager.LoadScene("Lvl1");
     }
    public void Options()
     {
