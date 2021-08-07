@@ -7,7 +7,6 @@ using System.Xml.Serialization;
 
 public class SaveMangerDone : MonoBehaviour
 {
-
     public static SaveMangerDone instance;
     public SaveData activeSave;
 
@@ -16,31 +15,9 @@ public class SaveMangerDone : MonoBehaviour
     public bool newGame;
 
     public void Awake()
-    {
+    {       
         instance = this;
         Load();
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            GameObject asd = GameObject.Find("PlayerGeneral");
-            FallRestart asdf = asd.GetComponent<FallRestart>();
-            asdf.death = SaveMangerDone.instance.activeSave.deaths;
-
-            GameObject yd = GameObject.Find("PlayerGeneral");
-            OnTrigEnter ass = yd.GetComponent<OnTrigEnter>();
-            ass.puntuation = SaveMangerDone.instance.activeSave.puntuation;
-
-            Save();
-        }   
     }
 
     public void Save()
@@ -60,6 +37,7 @@ public class SaveMangerDone : MonoBehaviour
         string dataPath = Application.persistentDataPath;
         if(System.IO.File.Exists(dataPath + "/" + activeSave.saveName + ".save"))
         {
+            Debug.Log("Cockins");
             var serializer = new XmlSerializer(typeof(SaveData));
             var stream = new FileStream(dataPath + "/" + activeSave.saveName + ".save", FileMode.Open);
             activeSave = serializer.Deserialize(stream) as SaveData;

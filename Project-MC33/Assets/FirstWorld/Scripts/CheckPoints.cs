@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class CheckPoints : MonoBehaviour
 {
-    public Vector3 startPos2;
-    public Vector3 restartPos2;
     public Rigidbody2D chRb;
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite;
@@ -18,32 +16,31 @@ public class CheckPoints : MonoBehaviour
     public int currentCheck = 0;
     public bool contact;
     public bool firstSaveLvl2;
-
     public Scene scene;
     // Start is called before the first frame update
     void Start()
     {
-        scene = SceneManager.GetActiveScene();
         check = false;
         contact = false;
-        
+        scene = SceneManager.GetActiveScene();
         saved = false;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        restartPos2 = startPos2;
         chRb = gameObject.GetComponent<Rigidbody2D>();
-
-        if(SaveMangerDone.instance.hasLoaded)
+        Debug.Log("Has Loaded: " + SaveMangerDone.instance.hasLoaded);
+        if(SaveMangerDone.instance.hasLoaded && scene.name == "Lvl1")
         {
-            GameObject pos03 = GameObject.Find("PlayerGeneral");
-            FallRestart pos04 = pos03.GetComponent<FallRestart>();
-            pos04.startPos = SaveMangerDone.instance.activeSave.respawnPosition;
+            Debug.Log("if");
+             GameObject pos03 = GameObject.Find("PlayerGeneral");
+             FallRestart pos04 = pos03.GetComponent<FallRestart>();
+             pos04.startPos = SaveMangerDone.instance.activeSave.respawnPosition;
         }
-        else
-        {
-            GameObject pos03 = GameObject.Find("PlayerGeneral");
-            FallRestart pos04 = pos03.GetComponent<FallRestart>();
-            pos04.startPos = new Vector3(-25.57f,2.36f,0f);            
-        }
+        //else
+        // {
+        //     Debug.Log("Else");
+        //     GameObject pos03 = GameObject.Find("PlayerGeneral");
+        //     FallRestart pos04 = pos03.GetComponent<FallRestart>();
+        //     pos04.startPos = new Vector3(-24f,1.6f,0f);            
+        //}
     }
 
 
@@ -51,14 +48,6 @@ public class CheckPoints : MonoBehaviour
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            if(scene.name == "Isaac")
-            {
-                firstSaveLvl2 = true;
-            }
-            else
-            {
-                firstSaveLvl2 = false;
-            }
             check = true;
             contact = true;
             saved = true;
@@ -69,7 +58,7 @@ public class CheckPoints : MonoBehaviour
 
             posPlayer = new Vector2(chRb.transform.position.x, chRb.transform.position.y);
             
-            SaveMangerDone.instance.activeSave.respawnPosition = posPlayer;
+            SaveMangerDone.instance.activeSave.respawnPosition =posPlayer;
             SaveMangerDone.instance.Save();
             spriteRenderer.sprite = newSprite;
         }

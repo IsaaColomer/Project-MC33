@@ -8,9 +8,11 @@ public class ButtonsCode : MonoBehaviour
    public GameObject musicGame;
    //public bool cock;
     // Start is called before the first frame update
+
    public void Play()
     {    
       SceneManager.LoadScene("Lvl1");
+      SaveMangerDone.instance.Load();
     }
    public void Options()
     {

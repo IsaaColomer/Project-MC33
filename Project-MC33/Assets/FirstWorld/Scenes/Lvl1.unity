@@ -169,8 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 2469725}
   spriteRenderer: {fileID: 2469727}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -675,8 +673,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 76042859}
   spriteRenderer: {fileID: 76042861}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -16601,7 +16597,7 @@ GameObject:
   - component: {fileID: 197790362}
   - component: {fileID: 197790363}
   m_Layer: 7
-  m_Name: b1 (2)
+  m_Name: b2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16852,8 +16848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 210794642}
   spriteRenderer: {fileID: 210794644}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -17056,7 +17050,7 @@ GameObject:
   - component: {fileID: 265553278}
   - component: {fileID: 265553279}
   m_Layer: 7
-  m_Name: b1 (1)
+  m_Name: b2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17778,7 +17772,7 @@ GameObject:
   - component: {fileID: 361552879}
   - component: {fileID: 361552880}
   m_Layer: 7
-  m_Name: b1 (4)
+  m_Name: b2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18780,8 +18774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 578993203}
   spriteRenderer: {fileID: 578993205}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -19237,8 +19229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 681484846}
   spriteRenderer: {fileID: 681484848}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -20567,7 +20557,7 @@ GameObject:
   - component: {fileID: 848797995}
   - component: {fileID: 848797996}
   m_Layer: 7
-  m_Name: b1 (5)
+  m_Name: b2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20684,8 +20674,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 859014333}
   spriteRenderer: {fileID: 859014335}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -20812,8 +20800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac78d7a2564d49b4d90bd23b537ae2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
-  lvl: 0
 --- !u!1 &942673574
 GameObject:
   m_ObjectHideFlags: 0
@@ -21179,8 +21165,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962803909}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.2199993, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 612212053}
@@ -21189,8 +21175,8 @@ Transform:
   - {fileID: 223235494}
   - {fileID: 506588313}
   - {fileID: 1117981636}
-  m_Father: {fileID: 1374634472}
-  m_RootOrder: 6
+  m_Father: {fileID: 6972700509974429632}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &978574167
 GameObject:
@@ -21642,8 +21628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 1053726852}
   spriteRenderer: {fileID: 1053726854}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -21945,7 +21929,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6972700509974429632}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1177786095
 MonoBehaviour:
@@ -22597,8 +22581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 1328925036}
   spriteRenderer: {fileID: 1328925038}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -23166,9 +23148,8 @@ Transform:
   - {fileID: 2057521940}
   - {fileID: 361552879}
   - {fileID: 848797995}
-  - {fileID: 962803910}
   m_Father: {fileID: 6972700509974429632}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1374634473
 MonoBehaviour:
@@ -24618,8 +24599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 1826889992}
   spriteRenderer: {fileID: 1826889994}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -25063,8 +25042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 1899587738}
   spriteRenderer: {fileID: 1899587740}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -25362,8 +25339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 1929354487}
   spriteRenderer: {fileID: 1929354489}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -25792,7 +25767,7 @@ GameObject:
   - component: {fileID: 2057521940}
   - component: {fileID: 2057521941}
   m_Layer: 7
-  m_Name: b1 (3)
+  m_Name: b2(3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25874,7 +25849,7 @@ GameObject:
   - component: {fileID: 2075798888}
   - component: {fileID: 2075798889}
   m_Layer: 7
-  m_Name: b1
+  m_Name: b2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38897,8 +38872,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 3297672685917213800}
   spriteRenderer: {fileID: 3297672685917213798}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -38922,8 +38895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 3297672686406150247}
   spriteRenderer: {fileID: 3297672686406150249}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -39114,8 +39085,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 3297672686635179648}
   spriteRenderer: {fileID: 3297672686635179662}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -39333,8 +39302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 3297672687094482382}
   spriteRenderer: {fileID: 3297672687094482368}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -39490,8 +39457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 3297672687156333711}
   spriteRenderer: {fileID: 3297672687156333697}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -39585,8 +39550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 3297672687486344564}
   spriteRenderer: {fileID: 3297672687486344570}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -39804,8 +39767,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 3297672687602170063}
   spriteRenderer: {fileID: 3297672687602170049}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -39961,8 +39922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f8a078eeb694344bbd28026294d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos2: {x: 0, y: 0, z: 0}
-  restartPos2: {x: 0, y: 0, z: 0}
   chRb: {fileID: 3297672687797927359}
   spriteRenderer: {fileID: 3297672687797927345}
   newSprite: {fileID: 21300000, guid: 49e6d2b695d8c7b449aa38921eca97d9, type: 3}
@@ -48686,13 +48645,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6972700509974429636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 235.83, y: -31.22, z: 0}
+  m_LocalPosition: {x: -24, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6972700509442571472}
   - {fileID: 6972700510821138894}
   - {fileID: 1888125286}
   - {fileID: 1451491789}
+  - {fileID: 962803910}
   - {fileID: 1374634472}
   - {fileID: 1177786094}
   m_Father: {fileID: 0}
@@ -49015,7 +48975,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 237.88753
+  m_Distance: 24.053274
   m_MaxDistanceOnly: 0
 --- !u!4 &6972700510821138894
 Transform:
