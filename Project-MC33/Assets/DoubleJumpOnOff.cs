@@ -6,19 +6,21 @@ public class DoubleJumpOnOff : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite;
+    public Sprite oldSprite;
     public bool spriteDoubleJump;
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        
+        spriteRenderer.sprite = oldSprite;
     }
-
-    // Update is called once per frame
     void Update()
     {
         if(spriteDoubleJump == false)
         {
             spriteRenderer.sprite=newSprite;
+        }
+        if(spriteDoubleJump)
+        {
+            spriteRenderer.sprite = oldSprite;
         }
     }
 }
