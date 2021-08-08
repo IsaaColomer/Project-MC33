@@ -76,4 +76,6 @@ public class SaveData
     public int deaths;
 
     public int puntuation;
+
+    public bool firstCheckDone = false;
 }

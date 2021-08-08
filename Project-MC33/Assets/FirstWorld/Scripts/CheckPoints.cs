@@ -37,7 +37,7 @@ public class CheckPoints : MonoBehaviour
             check = true;
             contact = true;
             saved = true;
-
+            SaveMangerDone.instance.activeSave.firstCheckDone = true;
             GameObject pos01 = GameObject.Find("PlayerGeneral");
             FallRestart pos02 = pos01.GetComponent<FallRestart>();
             pos02.startPos = chRb.transform.position;
