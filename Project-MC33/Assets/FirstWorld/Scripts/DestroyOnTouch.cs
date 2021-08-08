@@ -20,15 +20,18 @@ public class DestroyOnTouch : MonoBehaviour
     {
         GameObject p = GameObject.Find("PlayerGeneral");
         FallRestart g = p.GetComponent<FallRestart>();
-        if(g.restartDoubleJump == true)
+        if(g.dead == true)
         {
             breakCol.enabled = true;
             sprite.enabled = true;
         }
     }
-  void OnTriggerEnter2D(Collider2D col)
+    public void OnTriggerEnter2D(Collider2D col)
     {               
+        if(col.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
         breakCol.enabled = false;
         sprite.enabled = false;
+        }
     }
 }
