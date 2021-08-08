@@ -31,9 +31,9 @@ public class MovementFirst : MonoBehaviour
 
          if(scene.name == "Lvl1")
          { 
-            Debug.Log("scene 1 loaded");
-            pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
-            SaveMangerDone.instance.Load();
+            // Debug.Log("scene 1 loaded");
+            // pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
+            // SaveMangerDone.instance.Load();
          }
     }
 
