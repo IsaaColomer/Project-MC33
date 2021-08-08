@@ -16,9 +16,9 @@ public class DoubleJumpOnOff : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(pos04.doubleJump)
+        if(spriteDoubleJump == false)
         {
-
+            spriteRenderer.sprite=newSprite;
         }
     }
 }

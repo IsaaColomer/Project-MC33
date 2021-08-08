@@ -16,13 +16,13 @@ public class MovementFirst : MonoBehaviour
     public CapsuleCollider2D capsCol;
     float horizontalMove = 0f;
     public Collider2D attachCol;
-    GameObject v = GameObject.Find("PlayerGeneral");
-    DoubleJumpOnOff b = v.GetComponent<DoubleJumpOnOff>();
+
 
     public Scene scene;
 
     public void Awake()
     {
+
         SaveMangerDone.instance.DeleteSavedData();
         scene = SceneManager.GetActiveScene();
         GameObject pos03 = GameObject.Find("PlayerGeneral");
@@ -41,6 +41,9 @@ public class MovementFirst : MonoBehaviour
     {
         if(IsGrounded())
         {
+            GameObject v = GameObject.Find("PlayerGeneral");
+            DoubleJumpOnOff b = v.GetComponent<DoubleJumpOnOff>();
+        
 
             b.spriteDoubleJump = true;
 
@@ -60,7 +63,10 @@ public class MovementFirst : MonoBehaviour
                 {
                     rb.velocity = (Vector2.up) * (jumpVel);
                     doubleJump = false;
-                    b.spriteDoubleJump = false;
+                    GameObject vz = GameObject.Find("PlayerGeneral");
+                    DoubleJumpOnOff bz = vz.GetComponent<DoubleJumpOnOff>();
+        
+                    bz.spriteDoubleJump = false;
                 }
             }
         }             
@@ -73,7 +79,10 @@ public class MovementFirst : MonoBehaviour
         {
             isGrounded = true;
             doubleJump = true;
-            b.spriteDoubleJump = true;
+
+            GameObject vs = GameObject.Find("PlayerGeneral");
+            DoubleJumpOnOff bs = vs.GetComponent<DoubleJumpOnOff>();        
+            bs.spriteDoubleJump = true;
         }
         else
         {
@@ -91,7 +100,10 @@ public class MovementFirst : MonoBehaviour
         if(coll.gameObject.layer == LayerMask.NameToLayer("resetJump"))
         {
             doubleJump = true;
-            b.spriteDoubleJump = true;
+            GameObject va = GameObject.Find("PlayerGeneral");
+            DoubleJumpOnOff ba = va.GetComponent<DoubleJumpOnOff>();
+        
+            ba.spriteDoubleJump = true;
         }
     }
 }

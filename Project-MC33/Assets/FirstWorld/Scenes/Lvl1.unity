@@ -17516,7 +17516,6 @@ GameObject:
   m_Component:
   - component: {fileID: 333198236}
   - component: {fileID: 333198237}
-  - component: {fileID: 333198238}
   m_Layer: 7
   m_Name: DoubleJump
   m_TagString: Untagged
@@ -17589,20 +17588,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &333198238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333198235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8db33d2bfeb5cef46869e4a94097a729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
-  newSprite: {fileID: 0}
 --- !u!1 &342077888
 GameObject:
   m_ObjectHideFlags: 0
@@ -48557,6 +48542,7 @@ GameObject:
   - component: {fileID: 6972700509974429645}
   - component: {fileID: 6972700509974429644}
   - component: {fileID: 6972700509974429646}
+  - component: {fileID: 6972700509974429647}
   m_Layer: 7
   m_Name: PlayerGeneral
   m_TagString: Player
@@ -48821,6 +48807,21 @@ MonoBehaviour:
   startDashTime: 1
   direction: 0
   dashOn: 0
+--- !u!114 &6972700509974429647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6972700509974429636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db33d2bfeb5cef46869e4a94097a729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 333198237}
+  newSprite: {fileID: 21300000, guid: afac4c12cbca5bd4ca28faeaa66c5c75, type: 3}
+  spriteDoubleJump: 0
 --- !u!4 &6972700510821138894
 Transform:
   m_ObjectHideFlags: 0
