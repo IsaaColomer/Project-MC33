@@ -6,12 +6,9 @@ using UnityEngine.SceneManagement;
 public class ButtonsCode : MonoBehaviour
 {
    public GameObject musicGame;
-   //public bool cock;
-    // Start is called before the first frame update
 
    public void Play()
-    {  
-      
+   {
       SaveMangerDone.instance.DeleteSavedData();
       Debug.Log("Reaches the Delete Saved Data!");
            
@@ -23,22 +20,22 @@ public class ButtonsCode : MonoBehaviour
 
       SceneManager.LoadScene("Lvl1");
       Debug.Log("Reaches Scene Loader");
-    }
+   }
    public void Options()
-    {
-       SceneManager.LoadScene("Options");
-    }
+   {
+      SceneManager.LoadScene("Options");
+   }
    public void Quit()
-    {
-       Application.Quit();
-    }
+   {
+      Application.Quit();
+   }
 
    public void Title()
-    {
-       SceneManager.LoadScene("StartMenu");
-    }
-       public void Opt()
-    {
-       SceneManager.LoadScene("Opt");
-    }
+   {
+      SceneManager.LoadScene("StartMenu");
+   }
+      public void Opt()
+   {
+      SceneManager.LoadScene("Opt");
+   }
 }
