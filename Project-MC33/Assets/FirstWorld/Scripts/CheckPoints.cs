@@ -30,9 +30,9 @@ public class CheckPoints : MonoBehaviour
         if(SaveMangerDone.instance.hasLoaded && scene.name == "Lvl1")
         {
             Debug.Log("if");
-             GameObject pos03 = GameObject.Find("PlayerGeneral");
-             FallRestart pos04 = pos03.GetComponent<FallRestart>();
-             pos04.startPos = SaveMangerDone.instance.activeSave.respawnPosition;
+            GameObject pos03 = GameObject.Find("PlayerGeneral");
+            FallRestart pos04 = pos03.GetComponent<FallRestart>();
+            pos04.startPos = SaveMangerDone.instance.activeSave.respawnPosition;
         }
         //else
         // {

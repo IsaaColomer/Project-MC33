@@ -16,6 +16,8 @@ public class MovementFirst : MonoBehaviour
     public CapsuleCollider2D capsCol;
     float horizontalMove = 0f;
     public Collider2D attachCol;
+    GameObject v = GameObject.Find("PlayerGeneral");
+    DoubleJumpOnOff b = v.GetComponent<DoubleJumpOnOff>();
 
     public Scene scene;
 
@@ -25,6 +27,7 @@ public class MovementFirst : MonoBehaviour
         scene = SceneManager.GetActiveScene();
         GameObject pos03 = GameObject.Find("PlayerGeneral");
         FallRestart pos04 = pos03.GetComponent<FallRestart>();
+        
 
          if(scene.name == "Lvl1")
          { 
@@ -38,6 +41,9 @@ public class MovementFirst : MonoBehaviour
     {
         if(IsGrounded())
         {
+
+            b.spriteDoubleJump = true;
+
             doubleJump = true;
         }
                 
@@ -54,6 +60,7 @@ public class MovementFirst : MonoBehaviour
                 {
                     rb.velocity = (Vector2.up) * (jumpVel);
                     doubleJump = false;
+                    b.spriteDoubleJump = false;
                 }
             }
         }             
@@ -66,6 +73,7 @@ public class MovementFirst : MonoBehaviour
         {
             isGrounded = true;
             doubleJump = true;
+            b.spriteDoubleJump = true;
         }
         else
         {
@@ -83,6 +91,7 @@ public class MovementFirst : MonoBehaviour
         if(coll.gameObject.layer == LayerMask.NameToLayer("resetJump"))
         {
             doubleJump = true;
+            b.spriteDoubleJump = true;
         }
     }
 }
