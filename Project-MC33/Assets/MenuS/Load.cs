@@ -12,6 +12,7 @@ public class Load : MonoBehaviour
         SaveMangerDone h = p.GetComponent<SaveMangerDone>();
         h.newGame = false;
         SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
+        SaveMangerDone.instance.Load();
     }
     public void LoadPosition()
     {                                    

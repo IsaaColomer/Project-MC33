@@ -34,6 +34,7 @@ public class SaveMangerDone : MonoBehaviour
 
     public void Load()
     {
+        Debug.Log("Has Load from file SaveManagerDone: " + hasLoaded);
         string dataPath = Application.persistentDataPath;
         if(System.IO.File.Exists(dataPath + "/" + activeSave.saveName + ".save"))
         {
@@ -55,10 +56,24 @@ public class SaveMangerDone : MonoBehaviour
         {
             File.Delete(dataPath + "/" + activeSave.saveName + ".save");
         }
-        GameObject pos = GameObject.Find("PlayerGeneral");
-        FallRestart posd = pos.GetComponent<FallRestart>();
-        posd.rb.transform.position = new Vector3(-25.8f,0f,0f);
-        Debug.Log("New Position");
+    }
+    public void NewGameSavedData()
+    {
+        // Debug.Log("Reaches the start of NewGameSavedData");
+        // GameObject pos = GameObject.Find("PlayerGeneral");
+        // FallRestart posd = pos.GetComponent<FallRestart>();
+        // Debug.Log("Reaches the Creation of the variable");
+        // posd.rb.transform.position = new Vector3(-24f,1.6f,0f);
+        // Debug.Log("New Position");
+
+        string dataPath = Application.persistentDataPath;
+
+        var serializer = new XmlSerializer(typeof(SaveData));
+        var stream = new FileStream(dataPath + "/" + activeSave.saveName + ".save", FileMode.Create);
+        serializer.Serialize(stream, activeSave);
+        stream.Close();
+
+        Debug.Log("Saved!2");
     }
 }
 

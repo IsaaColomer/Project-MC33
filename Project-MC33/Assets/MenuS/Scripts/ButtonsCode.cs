@@ -10,9 +10,19 @@ public class ButtonsCode : MonoBehaviour
     // Start is called before the first frame update
 
    public void Play()
-    {    
-      SceneManager.LoadScene("Lvl1");
+    {  
+      
+      SaveMangerDone.instance.DeleteSavedData();
+      Debug.Log("Reaches the Delete Saved Data!");
+           
+      SaveMangerDone.instance.NewGameSavedData();
+      Debug.Log("Reaches the NewGameSavedData!");
+
       SaveMangerDone.instance.Load();
+      Debug.Log("Reaches the Load!");
+
+      SceneManager.LoadScene("Lvl1");
+      Debug.Log("Reaches Scene Loader");
     }
    public void Options()
     {
