@@ -25,16 +25,6 @@ public class MovementFirst : MonoBehaviour
 
         SaveMangerDone.instance.DeleteSavedData();
         scene = SceneManager.GetActiveScene();
-        GameObject pos03 = GameObject.Find("PlayerGeneral");
-        FallRestart pos04 = pos03.GetComponent<FallRestart>();
-        
-
-         if(scene.name == "Lvl1")
-         { 
-            // Debug.Log("scene 1 loaded");
-            // pos04.rb.transform.position = SaveMangerDone.instance.activeSave.respawnPosition;
-            // SaveMangerDone.instance.Load();
-         }
     }
 
     private void Update()

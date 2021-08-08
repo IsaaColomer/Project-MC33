@@ -11,9 +11,6 @@ public class ButtonsCode : MonoBehaviour
    {
       SaveMangerDone.instance.DeleteSavedData();
       Debug.Log("Reaches the Delete Saved Data!");
-           
-      SaveMangerDone.instance.NewGameSavedData();
-      Debug.Log("Reaches the NewGameSavedData!");
 
       SaveMangerDone.instance.Load();
       Debug.Log("Reaches the Load!");

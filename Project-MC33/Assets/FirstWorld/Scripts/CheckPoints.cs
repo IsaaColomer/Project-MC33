@@ -17,6 +17,7 @@ public class CheckPoints : MonoBehaviour
     public bool contact;
     public bool firstSaveLvl2;
     public Scene scene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +44,7 @@ public class CheckPoints : MonoBehaviour
 
             posPlayer = new Vector2(chRb.transform.position.x, chRb.transform.position.y);
             
-            SaveMangerDone.instance.activeSave.respawnPosition =posPlayer;
+            SaveMangerDone.instance.activeSave.respawnPosition = posPlayer;
             SaveMangerDone.instance.Save();
             spriteRenderer.sprite = newSprite;
         }

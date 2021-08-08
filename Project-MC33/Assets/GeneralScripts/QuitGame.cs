@@ -17,7 +17,6 @@ public class QuitGame : MonoBehaviour
         {
             Debug.Log("player position saved!");
             SaveMangerDone.instance.Save();
-            PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene("Options");
         }
     }

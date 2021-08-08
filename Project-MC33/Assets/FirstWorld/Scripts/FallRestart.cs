@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class FallRestart : MonoBehaviour
@@ -13,9 +14,15 @@ public class FallRestart : MonoBehaviour
     public CapsuleCollider2D walEnemyCol;
     public int death;
 
+
     void Start()
     {
         death = SaveMangerDone.instance.activeSave.deaths;
+        if(SaveMangerDone.instance.hasLoaded)
+        {
+            startPos = SaveMangerDone.instance.activeSave.respawnPosition;
+            rb.transform.position = startPos;
+        }
     }
 
     // Update is called once per frame
@@ -84,14 +91,6 @@ public class FallRestart : MonoBehaviour
         lol2.grapOn = false;
         grap2._distanceJoint.enabled = false;
 
-        // rj1.SetActive(true);
-        // rj2.SetActive(true);
-        // rj3.SetActive(true);
-        // rj4.SetActive(true);
-        // rj5.SetActive(true);
-        // rj6.SetActive(true);
-        // rj7.SetActive(true);
-
         Debug.Log("Cum");
         death++;
         SaveMangerDone.instance.activeSave.deaths++;
@@ -102,7 +101,7 @@ public class FallRestart : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Enemies"))
-    {
+        {
         GameObject a = GameObject.Find("PlayerGeneral");
         GrapDetection a1 = a.GetComponent<GrapDetection>();
 
@@ -117,7 +116,7 @@ public class FallRestart : MonoBehaviour
         dead = true;
         death++;
         SaveMangerDone.instance.activeSave.deaths++;
-    }
+        }
     if(other.gameObject.layer == LayerMask.NameToLayer("ChangeLvl"))
     {
         restartDoubleJump = true;

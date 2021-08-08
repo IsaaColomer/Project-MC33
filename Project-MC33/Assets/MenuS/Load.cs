@@ -7,15 +7,8 @@ public class Load : MonoBehaviour
 {
     // Start is called before the first frame update
     public void LoadGame()
-    {        
-        GameObject p = GameObject.Find("Saving");
-        SaveMangerDone h = p.GetComponent<SaveMangerDone>();
-        h.newGame = false;
-        SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
+    {
+        SceneManager.LoadScene("Lvl1");
         SaveMangerDone.instance.Load();
-    }
-    public void LoadPosition()
-    {                                    
-        
     }
 }
