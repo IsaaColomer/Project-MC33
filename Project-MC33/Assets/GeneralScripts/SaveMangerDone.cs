@@ -30,7 +30,7 @@ public class SaveMangerDone : MonoBehaviour
 
     public void Save()
     {
-        string dataPath = "C:/Users/Baobab/Desktop/Xml";
+        string dataPath = Application.dataPath;
         var serializer = new XmlSerializer(typeof(SaveData));
         var stream = new FileStream(dataPath + "/" + activeSave.saveName + ".save", FileMode.Create);
         serializer.Serialize(stream, activeSave);
@@ -42,7 +42,7 @@ public class SaveMangerDone : MonoBehaviour
     public void Load()
     {
         Debug.Log("Has Load from file SaveManagerDone: " + hasLoaded);
-        string dataPath = "C:/Users/Baobab/Desktop/Xml";
+        string dataPath = Application.dataPath;
         if(System.IO.File.Exists(dataPath + "/" + activeSave.saveName + ".save"))
         {
             Debug.Log("Cockins");
@@ -58,7 +58,7 @@ public class SaveMangerDone : MonoBehaviour
 
     public void DeleteSavedData()
     {
-        string dataPath = "C:/Users/Baobab/Desktop/Xml";
+        string dataPath = Application.dataPath;
         if(System.IO.File.Exists(dataPath + "/" + activeSave.saveName + ".save"))
         {
             File.Delete(dataPath + "/" + activeSave.saveName + ".save");

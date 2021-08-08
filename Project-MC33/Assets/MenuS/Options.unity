@@ -1134,9 +1134,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011241585}
-        m_TargetAssemblyTypeName: Load, Assembly-CSharp
-        m_MethodName: LoadGame
+      - m_Target: {fileID: 1011241587}
+        m_TargetAssemblyTypeName: ButtonsCode, Assembly-CSharp
+        m_MethodName: BackToGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2354,6 +2354,7 @@ MonoBehaviour:
     respawnPosition: {x: 0, y: 0, z: 0}
     deaths: 0
     puntuation: 0
+    firstCheckDone: 0
   hasLoaded: 0
   newGame: 0
 --- !u!1001 &3520140836437011700
