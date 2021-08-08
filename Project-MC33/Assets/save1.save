@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<SaveData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <saveName>save1</saveName>
+  <respawnPosition>
+    <x>30.4486217</x>
+    <y>-0.2877679</y>
+    <z>0</z>
+  </respawnPosition>
+  <deaths>3</deaths>
+  <puntuation>0</puntuation>
+  <firstCheckDone>true</firstCheckDone>
+  <time>21.6523228</time>
+</SaveData>

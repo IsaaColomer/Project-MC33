@@ -78,4 +78,6 @@ public class SaveData
     public int puntuation;
 
     public bool firstCheckDone = false;
+
+    public float time;
 }
