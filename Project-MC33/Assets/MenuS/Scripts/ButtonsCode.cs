@@ -29,6 +29,10 @@ public class ButtonsCode : MonoBehaviour
    {
       SceneManager.LoadScene("Opt");
    }
+   public void LoadGame()
+   {
+      SceneManager.LoadScene("Lvl1");
+   }
    public void BackToGame()
    {
       SceneManager.LoadScene("Lvl1");
