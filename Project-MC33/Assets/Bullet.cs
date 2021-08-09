@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
+    public int Puntuation;
     void Start()
     {
        rb.velocity = transform.right * speed;
@@ -41,6 +42,8 @@ public class Bullet : MonoBehaviour
         }
         if(col.gameObject.layer == LayerMask.NameToLayer("Aim"))
         {
+            Puntuation += 10;
+            SaveMangerDone.instance.activeSave.puntuationAims = Puntuation;
             Debug.Log("Aim Detected!");
             Destroy(gameObject);
             count2.bulletCount--;

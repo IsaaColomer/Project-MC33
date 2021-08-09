@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Puntuation : MonoBehaviour
 {    
     public Text puntLabel;
-    public OnTrigEnter a;
+    public Bullet a;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +16,6 @@ public class Puntuation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       puntLabel.text = a.GetComponent<OnTrigEnter>().puntuation.ToString();
+       puntLabel.text = a.GetComponent<Bullet>().Puntuation.ToString();
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public ParticleSystem part;
     public Transform firePoint;
     public GameObject bulletPrefab;
     public int bulletCount = 0;
@@ -14,8 +15,8 @@ public class Weapon : MonoBehaviour
         if(Input.GetKeyDown("x"))
         {
             Shoot();
+            part.Play();
         }
-
     }
 
     void Shoot()

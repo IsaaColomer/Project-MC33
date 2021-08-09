@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class FallRestart : MonoBehaviour
 {
+    public AudioSource nut;
     public bool dead = false;
     public bool restartDoubleJump = false;
     public Rigidbody2D rb;
@@ -46,6 +47,7 @@ public class FallRestart : MonoBehaviour
     }
     if(col.gameObject.layer == LayerMask.NameToLayer("Spikes"))
     {
+ 
         restartDoubleJump = true;
         dead = true;
         
@@ -60,6 +62,7 @@ public class FallRestart : MonoBehaviour
         grap2._distanceJoint.enabled = false;
  
         death++;
+        nut.Play();
         SaveMangerDone.instance.activeSave.deaths++;
     }
     if(col.gameObject.layer == LayerMask.NameToLayer("Fall"))
@@ -81,6 +84,7 @@ public class FallRestart : MonoBehaviour
         Debug.Log("lol");
         death++;
         SaveMangerDone.instance.activeSave.deaths++;
+        nut.Play();
     }
     if(col.collider == walEnemyCol)
     {
@@ -122,6 +126,7 @@ public class FallRestart : MonoBehaviour
         dead = true;
         death++;
         SaveMangerDone.instance.activeSave.deaths++;
+               nut.Play();
         }
     if(other.gameObject.layer == LayerMask.NameToLayer("ChangeLvl"))
     {
