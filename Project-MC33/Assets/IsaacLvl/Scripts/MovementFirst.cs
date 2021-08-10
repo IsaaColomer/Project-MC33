@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class MovementFirst : MonoBehaviour
 {
@@ -40,9 +41,9 @@ public class MovementFirst : MonoBehaviour
             doubleJump = true;
         }
                 
-        horizontalMove = Input.GetAxisRaw("Horizontal")*runSpeed;
+        horizontalMove = CrossPlatformInputManager.GetAxis("Horizontal")*runSpeed;
 
-        if(Input.GetKeyDown(KeyCode.Z))
+        if(CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             if(IsGrounded())
             {

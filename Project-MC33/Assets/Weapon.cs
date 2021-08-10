@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityStandardAssets.CrossPlatformInput;
 public class Weapon : MonoBehaviour
 {
     public ParticleSystem part;
@@ -12,7 +12,7 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("x"))
+        if(CrossPlatformInputManager.GetButtonDown("Shoot"))
         {
             Shoot();
             part.Play();

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityStandardAssets.CrossPlatformInput;
 public class GrapDetection : MonoBehaviour
 {
     public bool grapOn = false;
@@ -19,11 +19,11 @@ public class GrapDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("c") && grapOn == false)
+        if (CrossPlatformInputManager.GetButtonDown("Ab") && grapOn == false)
         {
             grapOn = false;
         }
-        if (Input.GetKeyDown("c") && grapOn == true)
+        if (CrossPlatformInputManager.GetButtonDown("Ab") && grapOn == true)
         {
             Vector2 grapPos = grapPosO;
             _lineRenderer.SetPosition(0, grapPos);
@@ -32,7 +32,7 @@ public class GrapDetection : MonoBehaviour
             _distanceJoint.enabled = true;
             _lineRenderer.enabled = true;
         }
-        else if (Input.GetKeyUp("c"))
+        else if (CrossPlatformInputManager.GetButtonUp("Ab"))
         {
             _distanceJoint.enabled = false;
             _lineRenderer.enabled = false;

@@ -19,16 +19,16 @@ public class FallRestart : MonoBehaviour
     void Start()
     {
         death = SaveMangerDone.instance.activeSave.deaths;
-    if(!SaveMangerDone.instance.activeSave.firstCheckDone)
-    {
-        startPos = new Vector3(-24f,1.6f,0f);
-        rb.transform.position = startPos;
-    }
-    else
-    {
-        startPos = SaveMangerDone.instance.activeSave.respawnPosition;
-        rb.transform.position = startPos;
-    }
+    // if(!SaveMangerDone.instance.activeSave.firstCheckDone)
+    // {
+    //     startPos = new Vector3(-24f,1.6f,0f);
+    //     rb.transform.position = startPos;
+    // }
+    // else
+    // {
+    //     startPos = SaveMangerDone.instance.activeSave.respawnPosition;
+    //     rb.transform.position = startPos;
+    // }
 
     }
 
