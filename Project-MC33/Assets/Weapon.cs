@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 public class Weapon : MonoBehaviour
 {
-    public ParticleSystem part;
     public Transform firePoint;
     public GameObject bulletPrefab;
     public int bulletCount = 0;
@@ -15,7 +14,6 @@ public class Weapon : MonoBehaviour
         if(CrossPlatformInputManager.GetButtonDown("Shoot"))
         {
             Shoot();
-            part.Play();
         }
     }
 

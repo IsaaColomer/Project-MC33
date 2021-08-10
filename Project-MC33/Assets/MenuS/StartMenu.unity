@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 19543833}
   - component: {fileID: 19543832}
   - component: {fileID: 19543831}
-  - component: {fileID: 19543830}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -143,41 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!328 &19543830
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19543829}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 6e161f8094055784dbf6d761f1967983, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 3
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 1
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
 --- !u!65 &19543831
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -210,7 +174,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47512b1506e4e584997a7dd6aa1248a1, type: 2}
+  - {fileID: 2100000, guid: e6bc0a82648b23246ad623e60ef35d64, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -249,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 19543829}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 451, y: 267, z: 6}
-  m_LocalScale: {x: 1145.1188, y: 532.4482, z: 8.602988}
+  m_LocalScale: {x: 3524.2175, y: 2522.3667, z: 8.602988}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -1891,7 +1855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12d937097f4457144848ccb9312a7996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lol: {fileID: 1147521237}
 --- !u!1001 &1242175059
 PrefabInstance:
   m_ObjectHideFlags: 0
